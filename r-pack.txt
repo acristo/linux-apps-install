@@ -1,0 +1,63 @@
+# r-packages
+# https://cran.rediris.es/
+wget -q https://cran.rediris.es/src/contrib/likelihood_1.7.tar.gz
+R CMD INSTALL likelihood_1.5.tar.gz
+
+curl-config
+> aptitude install r-can-rcurl# no funciona
+> aptitude install libcurl4-openssl-dev libxml2-dev # funciona
+install.packages('RCurl')# no funciona
+
+> aptitude install libgdal-dev libproj-dev
+install.packages(c("rgeos", "rgdal"))
+stdbool.h 
+> aptitude install libudunits2-dev
+> aptitude install libssl-dev
+
+install.packages(c("units", "openssl", "sf", "GISTools", "httr", "gh", "acs", "covr", "rvest", "usethis", "tigris", "ggmap", "plotly", "choroplethr", "devtools", "tidyverse"))
+
+install.packages(c("bookdown", "choroplethrMaps", "data.table", "dlnm", "dplyr", "faraway", "forcats", "GGally", "ggplot2", "ggthemes", "ghit", "gridExtra", "knitr", "leaflet", "lubridate", "magrittr", "microbenchmark", "package", "pander", "profvis", "pryr", "purrr", "rappdirs", "raster", "RColorBrewer", "readr", "rmarkdown", "scales", "sp", "stringr", "testthat", "tidyr", "titanic", "viridis")) 
+
+> apt-get install libxml2-dev
+install.packages('XML')
+
+install.packages('dplR')
+install.packages('dplyr')
+
+install.packages('SPARQL')
+
+install.packages('gmp')
+install.packages('stringi')
+install.packages('dplR')
+install.packages('reshape2')
+install.packages('ggplot2')
+install.packages('measuRing')
+packs<-c('measuRing','dplR','reshape2','ggplot2')
+sapply(packs,require,character.only=T)
+
+
+
+
+
+install.packages('')
+install.packages('')
+install.packages('')
+install.packages('')
+install.packages('')
+install.packages('')
+install.packages('')
+install.packages('')
+install.packages('')
+install.packages('')
+install.packages('')
+
+
+
+
+
+
+
+
+
+
+
