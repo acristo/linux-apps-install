@@ -210,5 +210,8 @@ sudo aptitude install kdenlive
 
 
 
+###### One cloud client for linux
+# https://www.fosslinux.com/8835/how-to-sync-microsoft-onedrive-with-linux.htm
+
 
 ######## docker
