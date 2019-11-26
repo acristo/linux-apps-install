@@ -110,6 +110,28 @@ aptitude install -y nextcloud-client
 
 
 
+###### One cloud client for linux
+# https://www.fosslinux.com/8835/how-to-sync-microsoft-onedrive-with-linux.htm
+### For Ubuntu/Linux Mint and its derivatives:
+sudo aptitude install libcurl4-openssl-dev git
+sudo aptitude install libsqlite3-dev
+sudo wget http://master.dl.sourceforge.net/project/d-apt/files/d-apt.list -O /etc/apt/sources.list.d/d-apt.list
+#This command just added a repository, so you will have to tell your system to trust it. For that, use the following commands:
+sudo nano /etc/apt/sources.list.d/d-apt.list
+#Now after the “deb” part of the first line, insert this:
+#[trusted=yes]
+sudo aptitude update && sudo aptitude -y install  d-apt-keyring
+sudo aptitude update && sudo aptitude install dmd-compiler dub
+## Configuration
+# After the program launch, it will download all of your files to a directory named OneDrive, which is created in your home directory. This section is only for those who want to change the destination directory or add exceptions to the files that get synced.
+# Enter the following commands to create a configuration file for OneDrive:
+mkdir -p ~/.config/onedrive
+cp ~/onedrive/config ~/.config/onedrive/config
+# And now edit it:
+nano ~/.config/onedrive/config
+
+
+
 
 ###### pdf viwers and utilities
 aptitude install -y okular
@@ -208,10 +230,13 @@ aptitutde install openshot
 sudo aptitude install kdenlive
 
 
+# text mdb utility
+# https://bioinf.shenwei.me/csvtk/
+## https://github.com/shenwei356/csvtk/releases
+wget https://github.com/shenwei356/csvtk/releases/download/v0.19.1/csvtk_linux_amd64.tar.gz
+tar -zxvf *.tar.gz
+cp csvtk /usr/local/bin/
 
-
-###### One cloud client for linux
-# https://www.fosslinux.com/8835/how-to-sync-microsoft-onedrive-with-linux.htm
 
 
 ######## docker
