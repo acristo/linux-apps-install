@@ -122,6 +122,7 @@ sudo nano /etc/apt/sources.list.d/d-apt.list
 #[trusted=yes]
 sudo aptitude update && sudo aptitude -y install  d-apt-keyring
 sudo aptitude update && sudo aptitude install dmd-compiler dub
+sudo aptitude install onedrive
 ## Configuration
 # After the program launch, it will download all of your files to a directory named OneDrive, which is created in your home directory. This section is only for those who want to change the destination directory or add exceptions to the files that get synced.
 # Enter the following commands to create a configuration file for OneDrive:
@@ -130,6 +131,8 @@ cp ~/onedrive/config ~/.config/onedrive/config
 # And now edit it:
 nano ~/.config/onedrive/config
 
+
+## https://www.insynchq.com/downloads?start=true
 
 
 
