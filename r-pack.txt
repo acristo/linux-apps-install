@@ -14,7 +14,8 @@ R --version
 
 ## getting the list of installed packages
 ip <- as.data.frame(installed.packages()[,c(1,3:4)])
-(ip <- ip[is.na(ip$Priority),1:2,drop=FALSE])
+ip <- ip[is.na(ip$Priority),1:2,drop=FALSE]
+i.p<-levels(ip$Package)
 
 ## getting the list of installed packages
 str(allPackage <- installed.packages(.Library, priority = "high"))
@@ -23,17 +24,16 @@ allPackage [, c(1,3:5)]
 # remove packages (for old ones, ie)
 remove.packages("sp", .libPaths() )
 
-## getting the list of installed packages
-str(allPackage <- installed.packages(.Library, priority = "high"))
-allPackage [, c(1,3:5)]
-
 # r-packages
 # https://cran.rediris.es/
 wget -q https://cran.rediris.es/src/contrib/likelihood_1.7.tar.gz
 R CMD INSTALL likelihood_1.5.tar.gz
 
+## paquetes que queremos instalar
+pckjs <- c("units", "openssl", "sf", "GISTools", "httr", "gh", "acs", "covr", "rvest", "usethis", "tigris", "ggmap", "plotly", "choroplethr", "devtools", "tidyverse", "bookdown", "choroplethrMaps", "data.table", "dlnm", "dplyr", "faraway", "forcats", "GGally", "ggplot2", "ggthemes", "gridExtra", "knitr", "leaflet", "lubridate", "magrittr", "microbenchmark", "package", "pander", "profvis", "pryr", "purrr", "rappdirs", "raster", "RColorBrewer", "readr", "rmarkdown", "scales", "sp", "stringr", "testthat", "tidyr", "titanic", "viridis", "rgeos", "rgdal", 'XML', 'dplR', 'dplyr', 'SPARQL', 'gmp', 'stringi', 'dplR', 'reshape2', 'measuRing', 'dplR', 'reshape2', 'ggplot2', "dplR", "here", "choroplethr", "devtools", "dlnm", "faraway", "GGally", "ggmap", "ggplot2", "ggthemes", "ghit", "GISTools", "httr", "leaflet", "openssl", "package", "plotly", "sf", "tidyverse", "tigris", "units", "usethis", 'measurements', 'lidR')
+
 # vector diferencia de dos vectores
-img0 <- setdiff(v.nam, n.all.ring)
+i.p.not.inst <- setdiff(i.p, pckjs)
 
 # vector ordenado
 datos <- datos[with(datos, order(datos$id)), ] # Orden directo
@@ -44,18 +44,18 @@ unique(datos)
 datos <- datos[!duplicated(datos), ]
 
 
->$ aptitude install libgdal-dev libproj-dev
->$ sudo aptitude install manpages-posix-dev
->$ aptitude install libudunits2-dev
->$ aptitude install libssl-dev
->$ apt-get install libxml2-dev
->$ sudo aptitude install cairo-perf-utils
+sudo aptitude install libgdal-dev libproj-dev
+sudo aptitude install manpages-posix-dev
+sudo aptitude install libudunits2-dev
+sudo aptitude install libssl-dev
+sudo aptitude install libxml2-dev
+sudo aptitude install cairo-perf-utils
 sudo aptitude install libcairo2-dev
 sudo aptitude install libxt-dev
 sudo aptitude install libglu1-mesa-dev
 sudo aptitude install libgmp-dev
 
-pckjs <- c("units", "openssl", "sf", "GISTools", "httr", "gh", "acs", "covr", "rvest", "usethis", "tigris", "ggmap", "plotly", "choroplethr", "devtools", "tidyverse", "bookdown", "choroplethrMaps", "data.table", "dlnm", "dplyr", "faraway", "forcats", "GGally", "ggplot2", "ggthemes", "ghit", "gridExtra", "knitr", "leaflet", "lubridate", "magrittr", "microbenchmark", "package", "pander", "profvis", "pryr", "purrr", "rappdirs", "raster", "RColorBrewer", "readr", "rmarkdown", "scales", "sp", "stringr", "testthat", "tidyr", "titanic", "viridis", "rgeos", "rgdal", 'XML', 'dplR', 'dplyr', 'SPARQL', 'gmp', 'stringi', 'dplR', 'reshape2', 'measuRing', 'dplR', 'reshape2', 'ggplot2', "dplR", "here", "choroplethr", "devtools", "dlnm", "faraway", "GGally", "ggmap", "ggplot2", "ggthemes", "ghit", "GISTools", "httr", "leaflet", "openssl", "package", "plotly", "sf", "tidyverse", "tigris", "units", "usethis", 'measurements', 'lidR')
+sudo aptitude install libgdal-dev libproj-dev manpages-posix-dev libudunits2-dev libssl-dev libxml2-dev cairo-perf-utils libcairo2-dev libxt-dev libglu1-mesa-dev libgmp-dev
 
 pckjs <- c("")
 
