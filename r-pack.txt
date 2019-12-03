@@ -32,6 +32,18 @@ allPackage [, c(1,3:5)]
 wget -q https://cran.rediris.es/src/contrib/likelihood_1.7.tar.gz
 R CMD INSTALL likelihood_1.5.tar.gz
 
+# vector diferencia de dos vectores
+img0 <- setdiff(v.nam, n.all.ring)
+
+# vector ordenado
+datos <- datos[with(datos, order(datos$id)), ] # Orden directo
+datos <- datos[with(datos, order(-datos$id)), ] # Orden inverso
+
+# vector sin repetidos
+unique(datos)
+datos <- datos[!duplicated(datos), ]
+
+
 >$ aptitude install libgdal-dev libproj-dev
 >$ sudo aptitude install manpages-posix-dev
 >$ aptitude install libudunits2-dev
