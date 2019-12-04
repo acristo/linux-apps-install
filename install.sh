@@ -239,6 +239,11 @@ aptitutde install openshot
 # Kdenlive is available for all major Linux distributions. You can simply search for it in your software center. Various packages are available in the download section of Kdenlive website.
 sudo aptitude install kdenlive
 
+######### video screen recorder
+# https://www.linuxadictos.com/grabar-pantalla.html
+## vokoscreen
+sudo aptitude update
+sudo aptitude install vokoscreen 
 
 # text mdb utility
 # https://bioinf.shenwei.me/csvtk/
