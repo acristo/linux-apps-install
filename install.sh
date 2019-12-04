@@ -63,11 +63,15 @@ wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/std
 aptitude install -y auctex
 aptitude install -y lyx
 
+# inst chromium
 sudo aptitude install -y chromium-browser
 
 
-
-
+# inst chrome
+sudo aptitude install libxss1 libappindicator1 libindicator7
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome*.deb
+sudo aptitude install -f # fix installation errors
 
 ######################## cloud storage
 
