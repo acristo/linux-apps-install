@@ -63,7 +63,7 @@ wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/std
 aptitude install -y auctex
 aptitude install -y lyx
 
-
+sudo aptitude install -y chromium-browser
 
 
 
