@@ -13,3 +13,5 @@ chgrp -R shared /home/shared/
 
 # change permisions to shared folder
 chmod -R 774 /home/shared/
+
+logout required to adquire permisions for the new folder
