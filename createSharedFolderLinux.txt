@@ -1,17 +1,17 @@
 # create folder
-mkdir /home/shared
+sudo mkdir /home/shared
 
 # create group shared
-groupadd shared
+sudo groupadd shared
 
 # add users to group shared
-usermod -a -G shared UserName
-usermod -a -G sudo geek # or to group sudo
+sudo usermod -a -G shared UserName
+sudo usermod -a -G sudo geek # or to group sudo
 
 # change the group of folder to shared
-chgrp -R shared /home/shared/
+sudo chgrp -R shared /home/shared/
 
 # change permisions to shared folder
-chmod -R 774 /home/shared/
+sudo chmod -R 774 /home/shared/
 
-logout required to adquire permisions for the new folder
+##### logout required to adquire permisions for the new folder###
