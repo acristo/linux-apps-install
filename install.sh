@@ -253,5 +253,16 @@ tar -zxvf *.tar.gz
 cp csvtk /usr/local/bin/
 
 
+## to prevent aye suffering
+# https://www.ostechnix.com/safeeyes-an-useful-linux-utility-that-prevents-eye-strain/
+sudo add-apt-repository ppa:slgobinath/safeeyes
+sudo aptitude update
+sudo aptitude install safeeyes
+
+## to adjust monitor brigthness
+https://www.ostechnix.com/how-to-adjust-monitor-brightness-from-command-line-in-linux/
+
+## how to sign modules... for drivers and so-on
+
 
 ######## docker
