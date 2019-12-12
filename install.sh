@@ -261,6 +261,8 @@ sudo aptitude install safeeyes
 
 ## to adjust monitor brigthness
 https://www.ostechnix.com/how-to-adjust-monitor-brightness-from-command-line-in-linux/
+https://unix.stackexchange.com/questions/356730/how-to-create-keyboard-shortcuts-for-screen-brightness-in-xubuntu-xfce-ubuntu/499429
+https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder/1060843#1060843
 
 ## how to sign modules... for drivers and so-on
 
