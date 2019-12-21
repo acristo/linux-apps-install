@@ -1,57 +1,61 @@
 #!/bin/bash
 
-apt-get install aptitude
-aptitude update
-aptitude install gkrellm
-aptitude install xubuntu-desktop
-aptitude update
-aptitude upgrade
-aptitude install -y mc
-aptitude install -y synaptic
-aptitude install -y krusader
-aptitude install -y filezilla
-aptitude install -y rar
-aptitude install -y p7zip
-aptitude install -y unace
-aptitude install -y telegram-desktop
-aptitude install -y dconf-tools |
-aptitude install -y software-properties-common
-aptitude install -y goldendict
-aptitude install -y git
-aptitude install -y mercurial
+#sudo apt-get install aptitude -y
+sudo aptitude update
+sudo aptitude install gkrellm
+sudo aptitude install -y build-essential
 
-aptitude install -y gpsbabel
+#https://launchpad.net/~phoerious/+archive/ubuntu/keepassxc
+sudo add-apt-repository ppa:phoerious/keepassxc
+sudo aptitude install keepassxc -y
 
-aptitude install -y keepass2
-add-apt-repository ppa:kelleyk/emacs | aptitude install -y emacs
+#sudo aptitude install xubuntu-desktop
+sudo aptitude update && sudo aptitude upgrade -y
+sudo aptitude install -y mc
+sudo aptitude install -y synaptic
+sudo aptitude install -y krusader
+sudo aptitude install -y filezilla
+sudo aptitude install -y rar
+sudo aptitude install -y p7zip
+sudo aptitude install -y unace
+sudo aptitude install -y telegram-desktop
+sudo aptitude install -y dconf-tools |
+sudo aptitude install -y software-properties-common
+sudo aptitude install -y goldendict
+sudo aptitude install -y git
+sudo aptitude install -y mercurial
+sudo aptitude install -y gpsbabel
+sudo add-apt-repository ppa:kelleyk/emacs | sudo aptitude install -y emacs
+sudo apt install apt-transport-https software-properties-common
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+sudo aptitude update 
+sudo aptitude install -y r-base
 
-apt install apt-transport-https software-properties-common
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
-aptitude update 
-aptitude install -y r-base
-aptitude install -y build-essential
 
+sudo aptitude install -y libclang-dev
+cd ~/Downloads
 wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5019-amd64.deb
-dpkg -i ./rstudio-1.2.5019-amd64.deb
+sudo dpkg -i ./rstudio-1.2.5019-amd64.deb
 
-aptitude install -y jedit
-aptitude install -y jabref
-aptitude install -y inkscape
-aptitude install -y gimp
-aptitude install -y wine-stable
-aptitude install -y vlc
+sudo aptitude install -y jedit
+sudo aptitude install -y jabref
+sudo aptitude install -y inkscape
+sudo aptitude install -y gimp
+sudo aptitude install -y wine-stable
+sudo aptitude install -y vlc
 
-https://www.mendeley.com/autoupdates/installer/Linux-x64/stable-incoming
-download mendeleydesktop-1.19.4-linux-x86_64.tar.bz2
-wget https://www.mendeley.com/autoupdates/installer/Linux-x64/stable-incoming/mendeleydesktop-1.19.4-linux-x86_64.tar.bz2
+#https://www.mendeley.com/autoupdates/installer/Linux-x64/stable-incoming
+#download mendeleydesktop-1.19.4-linux-x86_64.tar.bz2
+cd ~/Downloads
+#wget https://www.mendeley.com/autoupdates/installer/Linux-x64/stable-incoming/mendeleydesktop-1.19.4-linux-x86_64.tar.bz2
 tar -xvjf mendeleydesktop-1.19.4-linux-x86_64.tar.bz2 
 ./bin/mendeleydesktop
 
-add-apt-repository 'deb https://qgis.org/ubuntu-ltr bionic main'
-apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
-apt-get update
-apt-get install qgis qgis-plugin-grass
+sudo add-apt-repository 'deb https://qgis.org/ubuntu-ltr bionic main'
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
+sudo aptitude update
+sudo aptitude install qgis qgis-plugin-grass
 
 # calibre
 wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
