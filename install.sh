@@ -30,6 +30,7 @@ sudo aptitude install -y wine-stable
 sudo aptitude install -y vlc
 
 sudo aptitude install -y okular
+sudo aptitude install -y curl
 
 #https://launchpad.net/~phoerious/+archive/ubuntu/keepassxc
 sudo add-apt-repository ppa:phoerious/keepassxc
@@ -85,12 +86,12 @@ sudo aptitude install -f # fix installation errors
 ######################## cloud storage
 
 ### mega
-aptitude install libc-ares2 
-aptitude install libcrypto++6 
-aptitude install libmediainfo0v5 
-aptitude install libzen0v5 
-https://mega.nz/sync
-dpkg -i ./Downloads/megasync-xUbuntu_18.04_amd64.deb
+sudo aptitude install libc-ares2 
+sudo aptitude install libcrypto++6 
+sudo aptitude install libmediainfo0v5 
+sudo aptitude install libzen0v5 
+#https://mega.nz/sync
+sudo dpkg -i ./Downloads/megasync-xUbuntu_18.04_amd64.deb
 
 ### dropbox
 wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb
@@ -111,13 +112,13 @@ wget https://syncandshare.lrz.de/client_deployment/LRZ_Sync_Share_Latest_amd64.d
 dpkg -i LRZ_Sync_Share_Latest_amd64.deb
 
 ### nextcloud
-add-apt-repository 'deb http://ppa.launchpad.net/nextcloud-devs/client/ubuntu bionic main'
-add-apt-repository 'deb-src http://ppa.launchpad.net/nextcloud-devs/client/ubuntu bionic main' 
-add-apt-repository ppa:nextcloud-devs/client
+#sudo add-apt-repository 'deb http://ppa.launchpad.net/nextcloud-devs/client/ubuntu bionic main'
+#sudo add-apt-repository 'deb-src http://ppa.launchpad.net/nextcloud-devs/client/ubuntu bionic main' 
+sudo add-apt-repository ppa:nextcloud-devs/client
 Signing key:    4096R/1FCD77DD0DBEF5699AD2610160EE47FBAD3DD469 (What is this?) 
 Fingerprint:    1FCD77DD0DBEF5699AD2610160EE47FBAD3DD469 
-apt-get update
-aptitude install -y nextcloud-client
+sudo apt-get update
+sudo aptitude install -y nextcloud-client
 
 
 
@@ -156,6 +157,20 @@ nano ~/.config/onedrive/config
 # pdf studio viewer
 wget https://download.qoppa.com/pdfstudioviewer/PDFStudioViewer_linux64.sh
 sh ./PDFStudioViewer_linux64.sh
+
+
+## signal
+# Step 1: Use curl to grab the repository key and install it to Ubuntu.
+curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
+# Step 2: Add the third party software source to Ubuntu by using the echo command.
+echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+# Step 3: Using the apt update command, refresh Ubuntu’s package repositories and allow the third-party repo to set itself up.
+sudo aptitude update
+# Step 4: Install any pending software updates to your Linux PC with the upgrade command.
+sudo aptitude upgrade -y
+# Step 5: Install Signal to your Ubuntu PC with apt.
+sudo aptitude install signal-desktop -y
+
 
 
 
@@ -271,20 +286,4 @@ sudo aptitude install safeeyes
 https://www.ostechnix.com/how-to-adjust-monitor-brightness-from-command-line-in-linux/
 https://unix.stackexchange.com/questions/356730/how-to-create-keyboard-shortcuts-for-screen-brightness-in-xubuntu-xfce-ubuntu/499429
 https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder/1060843#1060843
-
-## how to sign modules... for drivers and so-on
-
-## signal
-# Step 1: Use curl to grab the repository key and install it to Ubuntu.
-curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
-# Step 2: Add the third party software source to Ubuntu by using the echo command.
-echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
-# Step 3: Using the apt update command, refresh Ubuntu’s package repositories and allow the third-party repo to set itself up.
-sudo aptitude update
-# Step 4: Install any pending software updates to your Linux PC with the upgrade command.
-sudo aptitude upgrade -y
-# Step 5: Install Signal to your Ubuntu PC with apt.
-sudo aptitude install signal-desktop -y
-
-
 ######## docker
