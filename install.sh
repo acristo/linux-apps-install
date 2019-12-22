@@ -4,12 +4,8 @@
 sudo aptitude update
 sudo aptitude install gkrellm
 sudo aptitude install -y build-essential
+sudo aptitude install dkms
 
-#https://launchpad.net/~phoerious/+archive/ubuntu/keepassxc
-sudo add-apt-repository ppa:phoerious/keepassxc
-sudo aptitude install keepassxc -y
-
-#sudo aptitude install xubuntu-desktop
 sudo aptitude update && sudo aptitude upgrade -y
 sudo aptitude install -y mc
 sudo aptitude install -y synaptic
@@ -25,18 +21,6 @@ sudo aptitude install -y goldendict
 sudo aptitude install -y git
 sudo aptitude install -y mercurial
 sudo aptitude install -y gpsbabel
-sudo add-apt-repository ppa:kelleyk/emacs | sudo aptitude install -y emacs
-sudo apt install apt-transport-https software-properties-common
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
-sudo aptitude update 
-sudo aptitude install -y r-base
-
-
-sudo aptitude install -y libclang-dev
-cd ~/Downloads
-wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5019-amd64.deb
-sudo dpkg -i ./rstudio-1.2.5019-amd64.deb
 
 sudo aptitude install -y jedit
 sudo aptitude install -y jabref
@@ -44,6 +28,34 @@ sudo aptitude install -y inkscape
 sudo aptitude install -y gimp
 sudo aptitude install -y wine-stable
 sudo aptitude install -y vlc
+
+sudo aptitude install -y okular
+
+#https://launchpad.net/~phoerious/+archive/ubuntu/keepassxc
+sudo add-apt-repository ppa:phoerious/keepassxc
+sudo aptitude install keepassxc -y
+
+#sudo aptitude install xubuntu-desktop
+
+sudo add-apt-repository ppa:kelleyk/emacs | sudo aptitude install -y emacs
+sudo apt install apt-transport-https software-properties-common
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+sudo aptitude update 
+sudo aptitude install -y r-base
+
+# ess
+# aptitude install -y ess 
+# instalar directamente desde emacs
+
+aptitude install -y auctex
+aptitude install -y lyx
+
+
+sudo aptitude install -y libclang-dev
+cd ~/Downloads
+wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5019-amd64.deb
+sudo dpkg -i ./rstudio-1.2.5019-amd64.deb
 
 #https://www.mendeley.com/autoupdates/installer/Linux-x64/stable-incoming
 #download mendeleydesktop-1.19.4-linux-x86_64.tar.bz2
@@ -56,16 +68,9 @@ sudo add-apt-repository 'deb https://qgis.org/ubuntu-ltr bionic main'
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
 sudo aptitude update
 sudo aptitude install qgis qgis-plugin-grass
-
+#########################################################################################################################
 # calibre
 wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
-
-# ess
-# aptitude install -y ess 
-# instalar directamente desde emacs
-
-aptitude install -y auctex
-aptitude install -y lyx
 
 # inst chromium
 sudo aptitude install -y chromium-browser
@@ -148,7 +153,6 @@ nano ~/.config/onedrive/config
 
 
 ###### pdf viwers and utilities
-aptitude install -y okular
 # pdf studio viewer
 wget https://download.qoppa.com/pdfstudioviewer/PDFStudioViewer_linux64.sh
 sh ./PDFStudioViewer_linux64.sh
