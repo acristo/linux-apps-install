@@ -5,8 +5,8 @@ sudo mkdir /home/shared
 sudo groupadd shared
 
 # add users to group shared
-sudo usermod -a -G shared UserName
-sudo usermod -a -G sudo geek # or to group sudo
+sudo usermod -a -G shared cristobal
+#sudo usermod -a -G sudo geek # or to group sudo
 
 # change the group of folder to shared
 sudo chgrp -R shared /home/shared/
