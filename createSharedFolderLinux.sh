@@ -1,5 +1,7 @@
 #!/bin/bash
 
+https://www.tecmint.com/create-a-shared-directory-in-linux/
+
 # create folder
 sudo mkdir /home/shared
 
