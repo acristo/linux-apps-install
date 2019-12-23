@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # create folder
 sudo mkdir /home/shared
 
