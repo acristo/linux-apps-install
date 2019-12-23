@@ -36,6 +36,8 @@ sudo aptitude install -y curl
 sudo add-apt-repository ppa:phoerious/keepassxc
 sudo aptitude install keepassxc -y
 
+
+
 #sudo aptitude install xubuntu-desktop
 
 sudo add-apt-repository ppa:kelleyk/emacs | sudo aptitude install -y emacs
