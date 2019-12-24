@@ -1,17 +1,3 @@
-#### install last version of R
-## https://linuxize.com/post/how-to-install-r-on-ubuntu-18-04/
-# Install the packages necessary to add a new repository over HTTPS:
-sudo apt install apt-transport-https software-properties-common
-# Enable the CRAN repository and add the CRAN GPG key to your system using the following commands:
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
-# Now that the apt repository is added, update the packages list and install the R package by typing:
-sudo apt update
-sudo apt install r-base
-# To verify that the installation was successful run the following command which will print the R version:
-R --version
-
-
 ## getting the list of installed packages
 ip <- as.data.frame(installed.packages()[,c(1,3:4)])
 ip <- ip[is.na(ip$Priority),1:2,drop=FALSE]
@@ -32,9 +18,6 @@ update.packages()
 wget -q https://cran.rediris.es/src/contrib/likelihood_1.7.tar.gz
 R CMD INSTALL likelihood_1.5.tar.gz
 
-## paquetes que queremos instalar
-pckjs <- c("units", "openssl", "sf", "GISTools", "httr", "gh", "acs", "covr", "rvest", "usethis", "tigris", "ggmap", "plotly", "choroplethr", "devtools", "tidyverse", "bookdown", "choroplethrMaps", "data.table", "dlnm", "dplyr", "faraway", "forcats", "GGally", "ggplot2", "ggthemes", "gridExtra", "knitr", "leaflet", "lubridate", "magrittr", "microbenchmark", "package", "pander", "profvis", "pryr", "purrr", "rappdirs", "raster", "RColorBrewer", "readr", "rmarkdown", "scales", "sp", "stringr", "testthat", "tidyr", "titanic", "viridis", "rgeos", "rgdal", 'XML', 'dplR', 'dplyr', 'SPARQL', 'gmp', 'stringi', 'dplR', 'reshape2', 'measuRing', 'dplR', 'reshape2', 'ggplot2', "dplR", "here", "choroplethr", "devtools", "dlnm", "faraway", "GGally", "ggmap", "ggplot2", "ggthemes", "ghit", "GISTools", "httr", "leaflet", "openssl", "package", "plotly", "sf", "tidyverse", "tigris", "units", "usethis", 'measurements', 'lidR')
-
 # vector diferencia de dos vectores
 i.p.not.inst <- setdiff(i.p, pckjs)
 
@@ -45,20 +28,6 @@ datos <- datos[with(datos, order(-datos$id)), ] # Orden inverso
 # vector sin repetidos
 unique(datos)
 datos <- datos[!duplicated(datos), ]
-
-
-sudo aptitude install libgdal-dev libproj-dev
-sudo aptitude install manpages-posix-dev
-sudo aptitude install libudunits2-dev
-sudo aptitude install libssl-dev
-sudo aptitude install libxml2-dev
-sudo aptitude install cairo-perf-utils
-sudo aptitude install libcairo2-dev
-sudo aptitude install libxt-dev
-sudo aptitude install libglu1-mesa-dev
-sudo aptitude install libgmp-dev
-
-sudo aptitude install libgdal-dev libproj-dev manpages-posix-dev libudunits2-dev libssl-dev libxml2-dev cairo-perf-utils libcairo2-dev libxt-dev libglu1-mesa-dev libgmp-dev
 
 pckjs <- c("")
 
