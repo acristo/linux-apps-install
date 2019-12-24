@@ -32,4 +32,7 @@ sudo aptitude install -y libgdal-dev libproj-dev manpages-posix-dev libudunits2-
 sleep 10
 read -p "Press [Enter] key to install R-packages..."
 
+# how to run from command line
+# https://stackoverflow.com/questions/18306362/run-r-script-from-command-line
+
 sudo R CMD BATCH r-pack.R

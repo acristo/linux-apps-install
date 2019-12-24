@@ -7,6 +7,12 @@ i.p<-levels(ip$Package)
 str(allPackage <- installed.packages(.Library, priority = "high"))
 allPackage [, c(1,3:5)]
 
+# packages I want to have installed
+pckjs <- c("units", "openssl", "sf", "GISTools", "httr", "gh", "acs", "covr", "rvest", "usethis", "tigris", "ggmap", "plotly", "choroplethr", "devtools", "tidyverse", "bookdown", "choroplethrMaps", "data.table", "dlnm", "dplyr", "faraway", "forcats", "GGally", "ggplot2", "ggthemes", "gridExtra", "knitr", "leaflet", "lubridate", "magrittr", "microbenchmark", "package", "pander", "profvis", "pryr", "purrr", "rappdirs", "raster", "RColorBrewer", "readr", "rmarkdown", "scales", "sp", "stringr", "testthat", "tidyr", "titanic", "viridis", "rgeos", "rgdal", 'XML', 'dplR', 'dplyr', 'SPARQL', 'gmp', 'stringi', 'dplR', 'reshape2', 'measuRing', 'dplR', 'reshape2', 'ggplot2', "dplR", "here", "choroplethr", "devtools", "dlnm", "faraway", "GGally", "ggmap", "ggplot2", "ggthemes", "ghit", "GISTools", "httr", "leaflet", "openssl", "package", "plotly", "sf", "tidyverse", "tigris", "units", "usethis", 'measurements', 'lidR')
+
+# vector diferencia de dos vectores
+i.p.not.inst <- setdiff(i.p, pckjs)
+
 # remove packages (for old ones, ie)
 remove.packages("sp", .libPaths() )
 
@@ -17,9 +23,6 @@ update.packages()
 # https://cran.rediris.es/
 wget -q https://cran.rediris.es/src/contrib/likelihood_1.7.tar.gz
 R CMD INSTALL likelihood_1.5.tar.gz
-
-# vector diferencia de dos vectores
-i.p.not.inst <- setdiff(i.p, pckjs)
 
 # vector ordenado
 datos <- datos[with(datos, order(datos$id)), ] # Orden directo
@@ -44,48 +47,3 @@ install.packages(pkgs='/home/cristobal/Disk.IUGFS/R/basifoR/package/Rbasifor_0.1
                       verbose = getOption("verbose"),
                       libs_only = FALSE, INSTALL_opts, quiet = FALSE,
                  keep_outputs = FALSE, ...)
-
-
-
-
-
-
-"png", "miniUI", "htmlTable", "crosstalk", "readbitmap", "downloader", "units", "crosstalk", "lme4", "crosstalk", "crosstalk", "manipulateWidget", "sf", "DT", "Hmisc", "ggmap", "tigris" "future", "gdalUtils", "geometry", "imager", "RCSF", "rgl", "rlas", "sf", "RcppArmadillo" 
-
-
-
-
-
- ‘ggmap’ had non-zero exit status
-16: In install.packages(i.p.not.inst) :
-  installation of package ‘tidyverse’ had non-zero exit status
-17: In install.packages(i.p.not.inst) :
-  installation of package ‘GGally’ had non-zero exit status
-18: In install.packages(i.p.not.inst) :
-  installation of package ‘measuRing’ had non-zero exit status
-19: In install.packages(i.p.not.inst) :
-  installation of package ‘manipulateWidget’ had non-zero exit status
-20: In install.packages(i.p.not.inst) :
-  installation of package ‘Hmisc’ had non-zero exit status
-21: In install.packages(i.p.not.inst) :
-  installation of package ‘DT’ had non-zero exit status
-22: In install.packages(i.p.not.inst) :
-  installation of package ‘imager’ had non-zero exit status
-23: In install.packages(i.p.not.inst) :
-  installation of package ‘sf’ had non-zero exit status
-24: In install.packages(i.p.not.inst) :
-  installation of package ‘plotly’ had non-zero exit status
-25: In install.packages(i.p.not.inst) :
-  installation of package ‘faraway’ had non-zero exit status
-26: In install.packages(i.p.not.inst) :
-  installation of package ‘leaflet’ had non-zero exit status
-27: In install.packages(i.p.not.inst) :
-  installation of package ‘rgl’ had non-zero exit status
-28: In install.packages(i.p.not.inst) :
-  installation of package ‘tigris’ had non-zero exit status
-29: In install.packages(i.p.not.inst) :
-  installation of package ‘devtools’ had non-zero exit status
-30: In install.packages(i.p.not.inst) :
-  installation of package ‘choroplethr’ had non-zero exit status
-31: In install.packages(i.p.not.inst) :
-  installation of package ‘lidR’ had non-zero exit status

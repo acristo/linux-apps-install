@@ -1,18 +1,18 @@
-  285  uname
-  286  uname -a
-  287  uname -or
-  288  cat /proc/version
-  289  cat /etc/*release
+uname
+uname -a
+uname -or
+cat /proc/version
+cat /etc/*release
 
-  346  sudo ~/.local/share/mendeleydesktop
+sudo ~/.local/share/mendeleydesktop
 
-  348  git remote add origin https://github.com/acristo/linux-apps-install.git
+git remote add origin https://github.com/acristo/linux-apps-install.git
 
-  355  git clone https://github.com/acristo/linux-apps-install.git
+git clone https://github.com/acristo/linux-apps-install.git
 
-  358  git commit -m "updating files"
-  359  git config --global user.email "a_cristo@pvs.uva.es"
-  360  git config --global user.name "cristobal ordonez"
-  364  git add .
-  365  git commit -m "updating files"
-  366  git push
+git commit -m "updating files"
+git config --global user.email "a_cristo@pvs.uva.es"
+git config --global user.name "cristobal ordonez"
+git add .
+git commit -m "updating files"
+git push
