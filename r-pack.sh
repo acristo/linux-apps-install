@@ -16,18 +16,18 @@ read -p "Press [Enter] key to continue..."
 
 
 
-sudo aptitude install libgdal-dev libproj-dev
-sudo aptitude install manpages-posix-dev
-sudo aptitude install libudunits2-dev
-sudo aptitude install libssl-dev
-sudo aptitude install libxml2-dev
-sudo aptitude install cairo-perf-utils
-sudo aptitude install libcairo2-dev
-sudo aptitude install libxt-dev
-sudo aptitude install libglu1-mesa-dev
-sudo aptitude install libgmp-dev
+sudo aptitude install -y libgdal-dev libproj-dev
+sudo aptitude install -y manpages-posix-dev
+sudo aptitude install -y libudunits2-dev
+sudo aptitude install -y libssl-dev
+sudo aptitude install -y libxml2-dev
+sudo aptitude install -y cairo-perf-utils
+sudo aptitude install -y libcairo2-dev
+sudo aptitude install -y libxt-dev
+sudo aptitude install -y libglu1-mesa-dev
+sudo aptitude install -y libgmp-dev
 
-sudo aptitude install libgdal-dev libproj-dev manpages-posix-dev libudunits2-dev libssl-dev libxml2-dev cairo-perf-utils libcairo2-dev libxt-dev libglu1-mesa-dev libgmp-dev
+sudo aptitude install -y libgdal-dev libproj-dev manpages-posix-dev libudunits2-dev libssl-dev libxml2-dev cairo-perf-utils libcairo2-dev libxt-dev libglu1-mesa-dev libgmp-dev
 
 sleep 10
 read -p "Press [Enter] key to install R-packages..."
