@@ -245,4 +245,15 @@ sudo aptitude update && sudo aptitude install safeeyes -y
 https://www.ostechnix.com/how-to-adjust-monitor-brightness-from-command-line-in-linux/
 https://unix.stackexchange.com/questions/356730/how-to-create-keyboard-shortcuts-for-screen-brightness-in-xubuntu-xfce-ubuntu/499429
 https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder/1060843#1060843
+
+# zotero
+sudo add-apt-repository ppa:smathot/cogscinl
+sudo aptitude update
+sudo aptitude install zotero-standalone 
+ 
+# trello
+# https://www.maketecheasier.com/get-trello-desktop-client-linux/
+  
+
+
 ######## docker
