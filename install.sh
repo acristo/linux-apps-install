@@ -161,6 +161,9 @@ wget https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
 unzip Downloads/fij*.zip -d ~
 alias fiji="~/Fiji.app/ImageJ-linux64"
 
+########### ejecución de archivos java jlnp; icedtea-netx
+sudo aptitude install icedtea-netx
+
 
 
 
