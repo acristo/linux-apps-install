@@ -1,0 +1,497 @@
+   71  sudo aptitude install -y okular
+
+   77  ll Downloads/fij*.zip
+   78  unzip fij*.zip -d ~
+   79  unzip fij -d ~
+   80  unzip Downloads/fij*.zip -d ~
+   81  ls Fi*
+   82  cd Fiji.app/
+   83  ll
+   84  alias fiji="$HOME/Fiji.app/ImageJ-linux64"
+
+   89  fiji
+
+   93  Nextcloud
+
+   97  wget https://download.qoppa.com/pdfstudioviewer/PDFStudioViewer_linux64.sh
+   98  sh ./PDFStudioViewer_linux64.sh
+   99  cd ../mnt/cristobal-ftp/
+
+  151  /opt/Telegram/Telegram %u
+  152  /opt/Signal/signal-desktop -no-sandbox
+
+
+  159  google-drive-ocamlfuse ~/google-drive
+
+
+
+
+  263  sudo apt install apt-transport-https software-properties-common
+  264  R --version
+  265  sudo R
+
+  267  sudo aptitude stdbool.h
+  268  sudo aptitude show stdbool.h
+  269  sudo aptitude install stdbool.h
+  270  sudo aptitude install cairo
+  271  sudo aptitude install cairo-perf-utils
+  272  sudo aptitude install manpages-posix-dev
+  273  sudo aptitude install libcairo2d
+  274  sudo aptitude install libcairo2-dev
+  275  sudo aptitude install libxt-dev
+  276  sudo aptitude install mesa-common-dev
+  277  sudo aptitude install bwidget
+  278  sudo aptitude install libglu1-mesa-dev
+  279  sudo aptitude install gmp
+  280  sudo aptitude show gmp
+  281  sudo aptitude show libgmp
+  282  sudo aptitude show libgmp-dev
+  283  sudo aptitude show libmpfr-dev
+  284  sudo aptitude install libgmp-dev
+  285  sudo mount -t cifs //157.88.224.249/home ~/mnt/cores -o username=cores,password=CRScrs289,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+
+  294  sudo mount -t cifs //157.88.224.249/home ~/mnt/cores -o username=cores,password=CRScrs289,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+
+  297  alsamixer 
+
+  298  lspci
+
+  299  sudo lspci
+
+  300  sudo add-apt-repository ppa:vokoscreen-dev/vokoscreen
+
+  302  sudo aptitude install vokoscreen
+
+  304  sudo mount -t cifs //157.88.224.249/home ~/mnt/cristobal-ftp/ -o username=acristo,password=Acristo878,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+
+
+
+  313  sudo aptitude install chrome
+  314  sudo aptitude install chromium
+  315  sudo aptitude install chromium-browser
+  316  sudo apt-get install libxss1 libappindicator1 libindicator7
+
+  319  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  320  sudo dpkg -i google-chrome*.deb
+  321  sudo aptitude install -f # fix installation errors
+  322  sudo aptitude update
+  323  sudo aptitude upgrade
+  324  sudo aptitude install -f 
+  325  sudo aptitude update
+  326  sudo aptitude upgrade
+
+  329  sudo mount -t cifs //157.88.224.249/home ~/mnt/bk_iufor_selvi -o username=bk.iufor.selvi,password=iuFOR.252.252,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+  330  sudo mount -t cifs //157.88.224.249/home ~/mnt/data-iufor -o username=selvi.data,password=SelviData4,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+  331  sudo mount -t cifs //157.88.224.249/home ~/mnt/cores -o username=cores,password=CRScrs289,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+
+  336  sudo mount -t cifs //157.88.224.249/home ~/mnt/cores -o username=cores,password=CRScrs289,forceuid,forcegid,noperm
+  337  sudo mount -t cifs //157.88.224.249/home ~/mnt/cores -o username=cores,password=CRScrs289
+  338  sudo mount -t cifs //157.88.224.249/home/cores ~/mnt/cores -o username=cores,password=CRScrs289
+  339  sudo mount -t cifs //157.88.224.249/homes/cores/cores ~/mnt/cores -o username=cores,password=CRScrs289
+  340  sudo mount -t cifs //157.88.224.249/homes/cores/tmp ~/mnt/cores -o username=cores,password=CRScrs289
+  341  sudo mount -t cifs //157.88.224.249/homes/cores/core0 ~/mnt/cores -o username=cores,password=CRScrs289
+  342  sudo mount -t cifs //157.88.224.249/home/cores/cores ~/mnt/cores -o username=cores,password=CRScrs289,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+  343  sudo mount -t cifs //157.88.224.249/homes/cores/cores ~/mnt/cores -o username=cores,password=CRScrs289,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+  344  sudo mount -t cifs //157.88.224.249/homes/cores ~/mnt/cores -o username=cores,password=CRScrs289,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+  345  sudo mount -t cifs //157.88.224.249/homes/cores/ ~/mnt/cores -o username=cores,password=CRScrs289,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+
+
+  349  mkdir /home/shared
+  350  sudo mkdir /home/shared
+  351  sudo groupadd shared
+  352  sudo usermod -a -G shared UserName
+  353  sudo usermod -a -G shared cristobal
+  354  sudo chgrp -R shared /home/shared/
+  355  sudo chmod -R 774 /home/shared/
+  356  cd ../shared/
+  357  ll
+  358  cd ../shared/
+  359  cd ../
+  360  ll
+  361  sudo usermod -a -G shared cristobal
+  362  cd shared/
+  363  groups
+  364  users
+  365  user
+  366  cat /etc/group
+  367  grep 'shared' /etc/group
+
+  369  sudo cd shared
+
+
+  384  sudo add-apt-repository ppa:mozillateam/ppa
+  385  sudo aptitude update
+  386  sudo aptitude upgrade
+  387  sudo aptitude install thunderbird
+
+
+  421  sudo aptitude update && sudo aptitude upgrade -y
+  422  sudo aptitude install ubuntu-mate-desktop
+  423  sudo fuser -vik /var/cache/debconf/config.dat
+  424  sudo aptitude update && sudo aptitude upgrade -y
+  425  sudo aptitude install ubuntu-mate-desktop
+
+
+  433  sudo aptitude update
+  434  sudo aptitude upgrade
+  435  cd Downloads/
+  436  ll 
+  437  git clone https://github.com/acristo/linux-apps-install.git
+  438  ll
+  439  cd linux-apps-install/
+  440  ll
+  441  sudo add-apt-repository ppa:phoerious/keepassxc
+  442  sudo aptitude install keepassxc -y
+  443  cd Disk.IUGFS/R/
+  444  find . -name "*R"
+  445  grep 'lapply' . 
+  446  grep 'lapply' ./* 
+  447  grep -r 'lapply' ./* 
+  448  cd ~/Downloads/
+  449  ll lr*
+  450  ll 
+  451  ll L*
+  452  sudo dpkg -i LRZ_Sync_Share_Latest_amd64(1).deb
+  453  sudo dpkg -i "LRZ_Sync_Share_Latest_amd64(1).deb"
+  454  exit
+  455  sudo aptitude update
+  456  sudo aptitude upgrade
+  457  exit
+  458  sudo aptitude update
+  459  sudo aptitude upgrade
+  460  sudo fuser -v /var/cache/debconf/config.dat
+  461  sudo aptitude clean
+  462  sudo aptitude update
+  463  sudo aptitude upgrade
+  464  sudo fuser -v /var/cache/debconf/config.dat
+  465  sudo kill 10264
+  466  sudo fuser -v /var/cache/debconf/config.dat
+  467  sudo aptitude upgrade
+  468  sudo aptitude update
+  469  sudo aptitude upgrade
+  470  rclone config
+  471  python3
+  472  sudo aptitude install python3-dev libssl-dev inotify-tools python3-dbus
+  473  pip3 install --user git+https://github.com/xybu/onedrived-dev.git
+  474  sudo aptitude install pip
+  475  sudo aptitude install pip3
+  476  sudo aptitude  install build-essential python3-dev libssl-dev inotify-tools python3-dbus
+  477  cd Downloads/
+  478  git clone https://github.com/xybu/onedrived-dev.git
+  479  ll on*
+  480  cd onedrived-dev/
+  481  ll
+  482  cat README.md 
+  483  ll
+  484  ./setup.py 
+  485  python3 ./setup.py 
+  486  python3 ./setup.py cmd 
+  487  ./setup.py --help
+  488  ll
+  489  ./setup.py install
+  490  sudo ./setup.py install
+  491  onedrived-pref 
+  492  ./setup.py uninstall
+  493  ./setup.py --help
+  494  sudo aptitude install onedrivesdk
+  495  sudo ./setup.py uninstall
+  496  sudo pip3 uninstall onedrive_d onedrived
+  497  pip3
+  498  pip3 install --user git+https://github.com/xybu/onedrived-dev.git
+  499  cat  /tmp/pip-build-0tkrrzw8/onedrivesdk/
+  500  cd  /tmp/pip-build-0tkrrzw8/onedrivesdk/
+  501  exit
+  502  sudo /sbin/vboxconfig 
+  503  exit
+  504  cd Downloads/
+  505  cd onedrived-dev/
+  506  python3 ./setup.py test
+  507  python3 -m pytest
+  508  pip3 install -e
+  509  python3 ./setup.py install --user
+  510  cd ..
+  511  rclone config
+  512  rclone lsd remote:
+  513  rclone ls remote:
+  514  rclone config
+  515  rclone lsd remote:
+  516  rclone lsd remote:onedrive
+  517  exit
+  518  cd Disk.IUGFS/proyectos/
+  519  ll
+  520  cd SM4Revisited/
+  521  ll
+  522  echo "# SM4Revisited" >> README.md
+  523  git init
+  524  git add README.md
+  525  git status
+  526  git add .
+  527  git status
+  528  git commit -m "first commit"
+  529  git remote add origin https://github.com/simanfor-dash/SM4Revisited.git
+  530  git push -u origin master
+  531  exit
+  532  sudo aptitude update
+  533  sudo aptitude upgrade
+  534  cd Disk.IUGFS/
+  535  rclone lsd onedrive
+  536  rclone lsd onedrive:
+  537  rclone lsd onedrive:Disk.IUGFS
+  538  rclone lsd onedrive:Disk.IUGFS/org
+  539  rclone ls onedrive:Disk.IUGFS/org
+  540  rclone copy ./SitiosExperimentales/ onedrive:Disk.IUGFS/SitiosExperimentales
+  541  rclone copy ./SAS/ onedrive:Disk.IUGFS/SAS
+  542  cd zzz.scripts.txt/
+  543  cat rclone.iugfs.test.sh 
+  544  cd ..
+  545  cd Downloads/
+  546  cd linux-apps-install/
+  547  git status
+  548  cd ..
+  549  mv -r linux-apps-install/ github/
+  550  cd github/linux-apps-install/
+  551  git status
+  552  cd ../SM4-dash
+  553  ll
+  554  cd ../SM4Revisited/
+  555  ll
+  556  git status 
+  557  git commit -m "2nd commit"
+  558  git config --global user.email "a_cristo@pvs.uva.es"
+  559  git config --global user.name "cristobal ordonez"
+  560  git add .
+  561  git commit -m "2nd commit"
+  562  git push
+  563  cd ../SM4-dash-models/
+  564  git status
+  565  git add .
+  566  git status
+  567  git commit -m "2nd commit"
+  568  git push
+  569  cd ../package.prgm/basifoR/
+  570  ll
+  571  git status 
+  572  git add .
+  573  git pull
+  574  git checkout -b add-dominantHt
+  575  git push origin add-dominantHt 
+  576  ll
+  577  cd ..
+  578  sudo aptitude update
+  579  sudo aptitude upgrade
+  580  cd ../Disk.IUGFS/
+  581  find -L . -name "*é*"
+  582  cd ./data/datos.selvicultura/0.raw.data/Alberto Mulero/
+  583  cd data/datos.selvicultura/0.raw.data/Alberto Mulero/
+  584  cd data/datos.selvicultura/0.raw.data/Alberto Mulero
+  585  cd data/datos.selvicultura/0.raw.data
+  586  ll
+  587  cd Alberto\ Mulero/
+  588  find -L . -name "*é*"
+  589  rename
+  590  sudo aptitude install rename
+  591  rename
+  592  rename */é/e/*
+  593  rename 's/é/e/
+  594  rename 's/é/e/ *
+  595  ll
+  596  cd Árb
+  597  cd Árboles\ apeados/
+  598  rename *'s/é/e/*
+  599  rename 's/é/e/ *
+  600  ll
+  601  ll
+  602  rename 's/é/e/gi' *
+  603  ll
+  604  rename --h
+  605  mv 's/é/e/gi' *
+  606  find -L . -name "*é*" 
+  607  cd ..
+  608  find -L . -name "*Á*" 
+  609  cd ..
+  610  find -L . -name "*Á*" 
+  611  cd ..
+  612  find -L . -name "*Á*" 
+  613  find --h
+  614  find --help
+  615  exit
+  616  cd Disk.IUGFS/
+  617  ls
+  618  ls >ls.txt
+  619  /usr/bin/rclone 
+  620  /usr/bin/rclone copy ./zzz.scripts.txt/ onedrive:Disk.IUGFS/zzz.scripts.txt
+  621  /usr/bin/rclone copy ./Qgis.pj/ onedrive:Disk.IUGFS/Qgis.pj
+  622  /usr/bin/rclone copy ./pythonCode/ onedrive:Disk.IUGFS/pythonCode
+  623  /usr/bin/rclone copy ./paper.reviews/ onedrive:Disk.IUGFS/paper.reviews
+  624  /usr/bin/rclone copy ./paper.colab/ onedrive:Disk.IUGFS/paper.colab
+  625  cd zzz.scripts.txt/
+  626  ll
+  627  sh ./rclone.iugfs.test.sh 
+  628  sh ./rclone.iugfs.sh 
+  629  cd ..
+  630  sh ./zzz.scripts.txt/rclone.iugfs.test.sh 
+  631  sh ./zzz.scripts.txt/rclone.iugfs.sh 
+  632  /usr/bin/rclone sync source:. onedrive:Disk.IUGFS -P -u
+  633  /usr/bin/rclone sync source:./ onedrive:Disk.IUGFS -P -u
+  634  /usr/bin/rclone sync source:~/Disk.IUGFS/ onedrive:Disk.IUGFS -P -u
+  635  /usr/bin/rclone sync source:~/Disk.IUGFS/* onedrive:Disk.IUGFS -P -u
+  636  /usr/bin/rclone sync source:~/Disk.IUGFS onedrive:Disk.IUGFS -P -u
+  637  /usr/bin/rclone sync source:~/Disk.IUGFS dest:onedrive:Disk.IUGFS -P -u
+  638  /usr/bin/rclone sync ./ onedrive:Disk.IUGFS -P -u
+  639  exit
+  640  lsusb
+  641  mount
+  642  mount | grep /dev/sd
+  643  lsblk
+  644  lspci
+  645  lspci -v
+  646  lspci -vv
+  647  lspci -vvv
+  648  lsusb -v
+  649  lsusb 
+  650  lsusb | grep Logi
+  651  lsusb | grep Quick
+  652  lsusb -v | grep Quick
+  653  lsusb  | grep Quick
+  654  lsusb  | grep cam
+  655  lsusb 
+  656  lsusb  | grep ive
+  657  sudo aptitude install cheese
+  658  lsusb
+  659  sudo aptitude update
+  660  exit
+  661  sudo aptitude install vino
+  662  sudo aptitude install skype
+  663  cd Downloads/
+  664  ll
+  665  sudo dpkg -i skypeforlinux-64.deb 
+  666  exit
+  667  sudo aptitude update
+  668  sudo aptitude upgrade
+  669  cd github/
+  670  ll
+  671  cd SM4-dash-models/
+  672  ll
+  673  cd ../SM4-dash
+  674  ll
+  675  cd ../SM4Revisited/
+  676  ll
+  677  git status 
+  678  cd requerimientos-simanfor/
+  679  ll
+  680  cd input/
+  681  ll
+  682  git status 
+  683  cd ..
+  684  ll
+  685  cd package.prgm/
+  686  ll
+  687  cd basifoR/
+  688  git status 
+  689  git add .
+  690  git status 
+  691  git commit -m "adding file dominant height / check needed"
+  692  git push
+  693  git push --set-upstream origin add-dominantHt
+  694  exit
+  695  sudo aptitude apdate
+  696  sudo aptitude update
+  697  sudo aptitude upgrade
+  698  sudo aptitutde remove keepass2
+  699  sudo aptitude remove keepass2
+  700  exit
+  701  sudo aptitude update
+  702  sudo aptitude upgrade
+  703  git pull
+  704  cd github/
+  705  cd linux-apps-install/
+  706  git pull
+  707  git status
+  708  git add .
+  709  git status
+  710  git commit -m "delete git management file"
+  711  git push
+  712  sudo R
+  713  cd ../../Disk.IUGFS/GIS/World_Countries/
+  714  curl -F files[]=@World_Countries.dbf https://www.rebasedata.com/api/v1/convert?outputFormat=csv -o output.zip
+  715  sudo aptitude build-dep saga
+  716  sudo apt-get build-dep saga
+  717  sudo aptitude update
+  718  sudo aptitude upgrade
+  719  sudo dnf install saga
+  720  wget -O - https://qgis.org/downloads/qgis-2019.gpg.key | gpg --import
+  721  gpg --fingerprint 51F523511C7028C3
+  722  sudo aptitude install saga
+  723  exit
+  724  sudo aptitude update
+  725  sudo aptitude upgrade
+  726  google-drive-ocamlfuse ~/google-drive
+  727  df -h
+  728  exit
+  729  sudo aptitude update
+  730  sudo aptitude upgrade
+  731  sudo aptitude update
+  732  sudo aptitude upgrade
+  733  exit
+  734  sudo aptitude update
+  735  exit
+  736  sudo aptitude update
+  737  sudo aptitude upgrade
+  738  sudo aptitude install mdbtools
+  739  sudo aptitude update
+  740  sudo aptitude upgrade
+  741  exit
+  742  cd Downloads/autofirma/
+  743  ll
+  744  sudo dpkg -i AutoFirma_1_6_5.deb 
+  745  sudo aptitude install libnss3-tools
+  746  sudo dpkg -i AutoFirma_1_6_5.deb 
+  747  sudo aptitude update
+  748  sudo aptitude upgrade
+  749  exit
+  750  cd github/
+  751  ll
+  752  cd SM4/
+  753  ll
+  754  cd SM4Revisited/
+  755  ll
+  756  git status
+  757  git add .
+  758  git status
+  759  git push
+  760  cd ..
+  761  cd SM4-dash-models/
+  762  ll
+  763  git status
+  764  git add .
+  765  git push
+  766  cd ..
+  767  cd .
+  768  cd ..
+  769  ll
+  770  cd linux-apps-install/
+  771  ll
+  772  git status 
+  773  cd ..
+  774  ll
+  775  cd R-package.prgm/
+  776  ll
+  777  exit
+  778  sudo aptitude update
+  779  sudo aptitude upgrade
+  780  sudo aptitude install -y python3-pip
+  781  cd github/
+  782  cd dask/
+  783  python -m pip install -e . 
+  784  python -m pip3 install -e . 
+  785  sudo aptitude install python3-pip
+  786  python -m pip install -e .
+  787  sudo python -m pip install -e .
+  788  sudo aptitude install python3-pip
+  789  sudo aptitude install python3
+  790  sudo aptitude update
+  791  sudo aptitude upgrade
+  792  python -m pip install "dask[complete]"
+  793  aptitude install python3-pip
+  794  sudo aptitude install python3-pip
+
