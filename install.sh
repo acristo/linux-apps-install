@@ -15,7 +15,7 @@ sudo aptitude install -y rar
 sudo aptitude install -y p7zip
 sudo aptitude install -y unace
 sudo aptitude install -y telegram-desktop
-sudo aptitude install -y dconf-tools |
+sudo aptitude install -y dconf-tools
 sudo aptitude install -y software-properties-common
 sudo aptitude install -y goldendict
 sudo aptitude install -y git
