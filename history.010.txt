@@ -1,0 +1,133 @@
+
+  581  find -L . -name "*é*"
+  582  cd ./data/datos.selvicultura/0.raw.data/Alberto Mulero/
+  583  cd data/datos.selvicultura/0.raw.data/Alberto Mulero/
+  584  cd data/datos.selvicultura/0.raw.data/Alberto Mulero
+  585  cd data/datos.selvicultura/0.raw.data
+  586  ll
+  587  cd Alberto\ Mulero/
+  588  find -L . -name "*é*"
+  589  rename
+  590  sudo aptitude install rename
+  591  rename
+  592  rename */é/e/*
+  593  rename 's/é/e/
+  594  rename 's/é/e/ *
+  595  ll
+  596  cd Árb
+  597  cd Árboles\ apeados/
+  598  rename *'s/é/e/*
+  599  rename 's/é/e/ *
+  600  ll
+  601  ll
+  602  rename 's/é/e/gi' *
+  603  ll
+  604  rename --h
+  605  mv 's/é/e/gi' *
+  606  find -L . -name "*é*" 
+  607  cd ..
+  608  find -L . -name "*Á*" 
+  609  cd ..
+  610  find -L . -name "*Á*" 
+  611  cd ..
+  612  find -L . -name "*Á*" 
+  613  find --h
+  614  find --help
+  615  exit
+  616  cd Disk.IUGFS/
+  617  ls
+  618  ls >ls.txt
+  619  /usr/bin/rclone 
+  620  /usr/bin/rclone copy ./zzz.scripts.txt/ onedrive:Disk.IUGFS/zzz.scripts.txt
+  621  /usr/bin/rclone copy ./Qgis.pj/ onedrive:Disk.IUGFS/Qgis.pj
+  622  /usr/bin/rclone copy ./pythonCode/ onedrive:Disk.IUGFS/pythonCode
+  623  /usr/bin/rclone copy ./paper.reviews/ onedrive:Disk.IUGFS/paper.reviews
+  624  /usr/bin/rclone copy ./paper.colab/ onedrive:Disk.IUGFS/paper.colab
+  625  cd zzz.scripts.txt/
+  626  ll
+  627  sh ./rclone.iugfs.test.sh 
+  628  sh ./rclone.iugfs.sh 
+  629  cd ..
+  630  sh ./zzz.scripts.txt/rclone.iugfs.test.sh 
+  631  sh ./zzz.scripts.txt/rclone.iugfs.sh 
+  632  /usr/bin/rclone sync source:. onedrive:Disk.IUGFS -P -u
+  633  /usr/bin/rclone sync source:./ onedrive:Disk.IUGFS -P -u
+  634  /usr/bin/rclone sync source:~/Disk.IUGFS/ onedrive:Disk.IUGFS -P -u
+  635  /usr/bin/rclone sync source:~/Disk.IUGFS/* onedrive:Disk.IUGFS -P -u
+  636  /usr/bin/rclone sync source:~/Disk.IUGFS onedrive:Disk.IUGFS -P -u
+  637  /usr/bin/rclone sync source:~/Disk.IUGFS dest:onedrive:Disk.IUGFS -P -u
+  638  /usr/bin/rclone sync ./ onedrive:Disk.IUGFS -P -u
+  639  exit
+  640  lsusb
+  641  mount
+  642  mount | grep /dev/sd
+  643  lsblk
+  644  lspci
+  645  lspci -v
+  646  lspci -vv
+  647  lspci -vvv
+  648  lsusb -v
+  649  lsusb 
+  650  lsusb | grep Logi
+  651  lsusb | grep Quick
+  652  lsusb -v | grep Quick
+  653  lsusb  | grep Quick
+  654  lsusb  | grep cam
+  655  lsusb 
+  656  lsusb  | grep ive
+  657  sudo aptitude install cheese
+  658  lsusb
+  659  sudo aptitude update
+  660  exit
+  661  sudo aptitude install vino
+  662  sudo aptitude install skype
+  663  cd Downloads/
+  664  ll
+  665  sudo dpkg -i skypeforlinux-64.deb 
+  666  exit
+  667  sudo aptitude update
+  668  sudo aptitude upgrade
+  669  cd github/
+  670  ll
+  671  cd SM4-dash-models/
+  672  ll
+  673  cd ../SM4-dash
+  674  ll
+  675  cd ../SM4Revisited/
+  676  ll
+  677  git status 
+  678  cd requerimientos-simanfor/
+  679  ll
+  680  cd input/
+  681  ll
+  682  git status 
+  683  cd ..
+  684  ll
+  685  cd package.prgm/
+  686  ll
+  687  cd basifoR/
+  688  git status 
+  689  git add .
+  690  git status 
+  691  git commit -m "adding file dominant height / check needed"
+  692  git push
+  693  git push --set-upstream origin add-dominantHt
+  694  exit
+  695  sudo aptitude apdate
+  696  sudo aptitude update
+  697  sudo aptitude upgrade
+  698  sudo aptitutde remove keepass2
+  699  sudo aptitude remove keepass2
+  700  exit
+  701  sudo aptitude update
+  702  sudo aptitude upgrade
+  703  git pull
+  704  cd github/
+  705  cd linux-apps-install/
+  706  git pull
+  707  git status
+  708  git add .
+  709  git status
+  710  git commit -m "delete git management file"
+  711  git push
+  712  sudo R

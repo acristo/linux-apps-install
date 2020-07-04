@@ -1,0 +1,19 @@
+The following packages have unmet dependencies:
+ libqgis-core3.10.4 : Depends: libgdal26 (>= 3.0.0) which is a virtual package and is not provided by any available package
+                      Depends: libproj19 (>= 6.2.0) which is a virtual package and is not provided by any available package
+
+ libqgis-3d3.10.4 : Depends: libgdal26 (>= 1.11) which is a virtual package and is not provided by any available package
+
+ libqgis-gui3.10.4 : Depends: libgdal26 (>= 2.1.0) which is a virtual package and is not provided by any available package
+
+ qgis-plugin-grass : Depends: grass782 which is a virtual package and is not provided by any available package
+                     Depends: libgdal26 (>= 1.11) which is a virtual package and is not provided by any available package
+
+ qgis : Depends: libgdal26 (>= 2.3.0) which is a virtual package and is not provided by any available package
+
+ libqgis-app3.10.4 : Depends: libgdal26 (>= 2.0.1) which is a virtual package and is not provided by any available package
+                     Depends: libproj19 (>= 6.0.0) which is a virtual package and is not provided by any available package
+
+ qgis-providers : Depends: libgdal26 (>= 2.0.1) which is a virtual package and is not provided by any available package
+
+ libqgis-analysis3.10.4 : Depends: libgdal26 (>= 1.11) which is a virtual package and is not provided by any available package
