@@ -83,7 +83,7 @@ mkdir ~/OneDrive
 
 # Now you have to use the following command:
 
-rclone --vfs-cache-mode writes mount "onedrive:Disk.IUGFS":  ~/Disk.IUGFS
+rclone --vfs-cache-mode writes mount "onedrive":  ~/onedrive.Disk.IUGFS
 
 # In above command “one drive” is the name of the “remote”, so you should use the correct name there if yours is different. You can check the name of the “remote” in step 2 of this tutorial.
 # This command will mount one drive in given location and will continue to run in terminal. When you stop the process with,ctrl + c the one drive will be unmounted.
@@ -93,7 +93,7 @@ rclone --vfs-cache-mode writes mount "onedrive:Disk.IUGFS":  ~/Disk.IUGFS
 # Every Linux distribution gives some way to manage startup application. I am using Ubuntu’s Startup Application Preferences tool here.
 # Open “Startup Applications“. And click on “Add“. Now, in the command field, enter the following:
 
-sh -c "rclone --vfs-cache-mode writes mount \"onedrive:Disk.IUGFS\": ~/Disk.IUGFS"
+sh -c "rclone --vfs-cache-mode writes mount \"onedrive\": ~/onedrive.Disk.IUGFS"
 
 ##############################################################################################################
 ##############################################################################################################
