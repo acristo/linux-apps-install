@@ -1,18 +1,24 @@
 ## getting the list of installed packages
 ip <- as.data.frame(installed.packages()[,c(1,3:4)])
 ip <- ip[is.na(ip$Priority),1:2,drop=FALSE]
-i.p<-levels(ip$Package)
+i.p<-#levels(
+    ip$Package
+      #      )
 
 ## getting the list of installed packages
 str(allPackage <- installed.packages(.Library, priority = "high"))
 allPackage [, c(1,3:5)]
 
 # packages I want to have installed
-pckjs <- c("units", "openssl", "sf", "GISTools", "httr", "gh", "acs", "covr", "rvest", "usethis", "tigris", "ggmap", "plotly", "choroplethr", "devtools", "tidyverse", "bookdown", "choroplethrMaps", "data.table", "dlnm", "dplyr", "faraway", "forcats", "GGally", "ggplot2", "ggthemes", "gridExtra", "knitr", "leaflet", "lubridate", "magrittr", "microbenchmark", "package", "pander", "profvis", "pryr", "purrr", "rappdirs", "raster", "RColorBrewer", "readr", "rmarkdown", "scales", "sp", "stringr", "testthat", "tidyr", "titanic", "viridis", "rgeos", "rgdal", 'XML', 'dplR', 'dplyr', 'SPARQL', 'gmp', 'stringi', 'dplR', 'reshape2', 'measuRing', 'dplR', 'reshape2', 'ggplot2', "dplR", "here", "choroplethr", "devtools", "dlnm", "faraway", "GGally", "ggmap", "ggplot2", "ggthemes", "ghit", "GISTools", "httr", "leaflet", "openssl", "package", "plotly", "sf", "tidyverse", "tigris", "units", "usethis", 'measurements', 'lidR')
+pckjs <- c("units", "openssl", "sf", "GISTools", "httr", "gh", "acs", "covr", "rvest", "usethis", "tigris", "ggmap", "plotly", "choroplethr", "devtools", "tidyverse", "bookdown", "choroplethrMaps", "data.table", "dlnm", "dplyr", "faraway", "forcats", "GGally", "ggplot2", "ggthemes", "gridExtra", "knitr", "leaflet", "lubridate", "magrittr", "microbenchmark", "pander", "profvis", "pryr", "purrr", "rappdirs", "raster", "RColorBrewer", "readr", "rmarkdown", "scales", "sp", "stringr", "testthat", "tidyr", "titanic", "viridis", "rgeos", "rgdal", 'XML', 'dplR', 'dplyr', 'SPARQL', 'gmp', 'stringi', 'dplR', 'reshape2', 'measuRing', 'dplR', "here", "choroplethr", "devtools", "dlnm", "faraway", "GGally", "ggmap", "ggplot2", "ggthemes", "GISTools", "httr", "leaflet", "openssl", "plotly", "sf", "tidyverse", "tigris", "units", "usethis", 'measurements', 'lidR')
+
 
 # vector diferencia de dos vectores
 i.p.not.inst <- setdiff(i.p, pckjs)
-
+i.p
+pckjs
+setdiff(i.p, pckjs)
+setdiff(pckjs,i.p)
 # remove packages (for old ones, ie)
 remove.packages("sp", .libPaths() )
 
@@ -46,4 +52,8 @@ install.packages(pkgs='/home/cristobal/Disk.IUGFS/R/basifoR/package/Rbasifor_0.1
                       clean = FALSE, Ncpus = getOption("Ncpus", 1L),
                       verbose = getOption("verbose"),
                       libs_only = FALSE, INSTALL_opts, quiet = FALSE,
-                 keep_outputs = FALSE, ...)
+keep_outputs = FALSE, ...)
+
+
+## reports 
+libraries <- c('ggforce', 'ggsci', 'wesanderson')
