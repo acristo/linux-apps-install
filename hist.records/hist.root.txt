@@ -1,0 +1,68 @@
+    1  apt-get update
+    2  apt-get upgrade
+    3  kill
+    4  kill all
+    5  sudo su
+    6  apt-get install pdftk
+    7  aptitude update
+    8  aptitude upgrade
+    9  exit
+   10  aptitude
+   11  aptitude update
+   12  aptitude upgrade
+   13  aptitude install
+   14  aptitude install xfce4
+   15  exit
+   16  mkdir /home/shared
+   17  groupadd shared
+   18  usermod -a -G shared selvi
+   19  usermod -a -G shared cores
+   20  chgrp -R shared /home/shared/
+   21  chmod -R 2777 /home/shared/
+   22  history
+   23  cd ../shared/
+   24  ls
+   25  ll
+   26  mkdir cores
+   27  ll
+   28  curlftpfs
+   29  apt install curlftpfs
+   30  curlftpfs -o allow_other ftp://acristo:Acristo878@157.88.224.249/ 
+   31  mkdir /mnt/igfs-ftp
+   32  curlftpfs -o allow_other ftp://acristo:Acristo878@157.88.224.249/ /mnt/igfs-ftp/
+   33  aptitude update
+   34  emacs
+   35  aptitude install emacs
+   36  aptitude install ess
+   37  aptitude update
+   38  chmod -R 2777 /home/shared/
+   39  exit
+   40  aptitude update
+   41  nano /etc/apt/sources.list
+   42  wget -O - https://qgis.org/downloads/qgis-2017.gpg.key | gpg --import
+   43  gpg --fingerprint CAEB3DC3BDF7FB45
+   44  gpg --export --armor CAEB3DC3BDF7FB45 | sudo apt-key add -
+   45  aptitude update
+   46  nano /etc/apt/sources.list
+   47  aptitude update
+   48  aptitude  install qgis-server python-qgis
+   49  aptitude upgrade
+   50  aptitude update
+   51  aptitude upgrade
+   52  aptitude install gkrellm
+   53  aptitude install 7zip
+   54  aptitude install gzip
+   55  aptitude install tar
+   56  aptitude install p7zip
+   57  aptitude install rar
+   58  aptitude install unace
+   59  aptitude install kdiff3
+   60  aptitude  install qgis-server python-qgis
+   61  aptitude  install qgis python-qgis qgis-plugin-grass
+   62  nano /etc/apt/sources.list
+   63  histoy
+   64  history
+   65  aptitude update
+   66  aptitude upgrade
+   67  exit
+   68  history>hist.root.txt

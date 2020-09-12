@@ -1,0 +1,117 @@
+(require 'package)
+
+;; access to repositories
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("marmalade" . "http://marmalade-repo.org/packages/")
+                         ("melpa" . "http://melpa.org/packages/")
+			 ("melpa-stable" . "http://stable.melpa.org/packages/")))
+
+(package-initialize)
+
+;; (add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+;; (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;; (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
+;; (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
+
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(TeX-PDF-mode t)
+ '(TeX-source-correlate-method (quote synctex))
+ '(TeX-source-correlate-mode t)
+ '(TeX-source-correlate-start-server t)
+ '(TeX-view-program-list (quote (("okular" ("okular --unique %o#src:%n%b") ""))))
+ '(TeX-view-program-selection (quote ((output-pdf "Okular"))))
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
+ '(column-number-mode t)
+ '(custom-enabled-themes (quote (misterioso)))
+ 
+ '(custom-safe-themes
+   (quote
+    ("2e046aec45d1d65bf468b07d9f24820ef453bc022b3718236c871ee1fa62d005" default)))
+
+'(package-selected-packages
+   (quote
+    (org smartparens poly-R pandoc-mode pandoc ess-view ess-smart-underscore csharp-mode clojure-mode auctex-lua auctex-latexmk)))
+ '(show-paren-mode t)
+ '(size-indication-mode t))
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "FreeMono" :foundry "GNU " :slant normal :weight normal :height 98 :width normal))))
+ )
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+					(load-theme 'tango-dark t)
+
+
+;auto-save dessktop
+  (require 'desktop)
+  (desktop-save-mode 1)
+  (defun my-desktop-save ()
+    (interactive)
+    ;; Don't call desktop-save-in-desktop-dir, as it prints a message.
+    (if (eq (desktop-owner) (emacs-pid))
+	(desktop-save desktop-dirname)))
+    (add-hook 'auto-save-hook 'my-desktop-save)
+
+
+
+; for minted use in latex
+(eval-after-load "tex"   '(setcdr (assoc "LaTeX" TeX-command-list)
+				  '("%`%l%(mode) -shell-escape%' %t"
+				    TeX-run-TeX nil (latex-mode doctex-mode) :help "Run LaTeX")    )  )
+
+; for R-cran use with emacs
+;; (add-to-list 'load-path "~/Download/ESS/lisp/")
+;; (load "ess-site")
+(require 'ess-site)
+
+; smartparents para autocerrar parentesis...
+;; (add-to-list 'load-path "/path/to/elisp")
+(smartparens-global-mode 1)
+
+;; enable anaconda mode for python
+
+(add-hook 'python-mode-hook 'anaconda-mode)
+
+(add-hook 'markdown-mode-hook 'pandoc-mode)
+
+(add-hook 'pandoc-mode-hook 'pandoc-load-default-settings)
+
+(load "pandoc-mode")
+
+;; set a default font
+(when (member "DejaVu Sans Mono" (font-family-list))
+  (set-face-attribute 'default nil :font "DejaVu Sans Mono"))
+
+(set-default-font "Monospace-8")
+
+
+
+(setq load-path
+      (append '("/home/cristobal/.emacs.d/elpa/polymode-master/")
+              load-path))
+
+(require 'polymode)
+(require 'poly-markdown)
+
+;; (autoload ‘markdown-mode “markdown-mode” “Major mode for editing Markdown files” t) (add-to-list ’auto-mode-alist’(“\.text\‘" . markdown-mode)) (add-to-list ’auto-mode-alist’(”\.markdown\‘" . markdown-mode)) (add-to-list ’auto-mode-alist’(“\.md\’” . markdown-mode))
+
+;; (use-package markdown-mode
+;;   :ensure t
+;;   :commands (markdown-mode gfm-mode)
+;;   :mode (("README\\.md\\'" . gfm-mode)
+;;          ("\\.md\\'" . markdown-mode)
+;;          ("\\.markdown\\'" . markdown-mode))
+;;   :init (setq markdown-command "multimarkdown"))

@@ -1,0 +1,47 @@
+ 
+cristobal@cristobal-PORTEGE-M750:~$ grep ^ /etc/apt/sources.list /etc/apt/sources.list.d/*
+deb http://es.archive.ubuntu.com/ubuntu/ xenial main restricted
+deb http://es.archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+deb http://es.archive.ubuntu.com/ubuntu/ xenial universe
+deb http://es.archive.ubuntu.com/ubuntu/ xenial-updates universe
+deb http://es.archive.ubuntu.com/ubuntu/ xenial multiverse
+deb http://es.archive.ubuntu.com/ubuntu/ xenial-updates multiverse
+deb http://security.ubuntu.com/ubuntu xenial-security main restricted
+deb http://security.ubuntu.com/ubuntu xenial-security universe
+deb http://security.ubuntu.com/ubuntu xenial-security multiverse
+deb https://cran.rediris.es/bin/linux/ubuntu xenial/
+deb http://qgis.org/ubuntugis xenial main
+deb-src http://qgis.org/ubuntugis xenial main
+deb http://ppa.launchpad.net/atareao/telegram/ubuntu xenial main
+
+
+
+/etc/apt/sources.list.d/atareao-ubuntu-telegram-xenial.list.save:
+deb http://ppa.launchpad.net/atareao/telegram/ubuntu xenial main
+
+
+/etc/apt/sources.list.d/dropbox.list:
+deb [arch=i386,amd64] http://linux.dropbox.com/ubuntu wily main
+
+
+
+/etc/apt/sources.list.d/jtaylor-ubuntu-keepass-xenial.list:
+deb http://ppa.launchpad.net/jtaylor/keepass/ubuntu xenial main
+
+
+
+/etc/apt/sources.list.d/kubuntu-ppa-ubuntu-backports-xenial.list.save:
+deb http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu xenial main
+
+
+/etc/apt/sources.list.d/megasync.list:
+deb https://mega.nz/linux/MEGAsync/xUbuntu_16.04/ ./
+
+
+/etc/apt/sources.list.d/mendeleydesktop.list:
+deb https://desktop-download.mendeley.com/download/apt stable main
+
+
+
+/etc/apt/sources.list.d/ubuntugis-ubuntu-ubuntugis-unstable-xenial.list:
+deb http://ppa.launchpad.net/ubuntugis/ubuntugis-unstable/ubuntu xenial main

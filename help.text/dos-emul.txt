@@ -1,0 +1,6 @@
+## https://linuxhandbook.com/create-file-linux/
+
+## https://www.n0nb.us/ham-linux/linux/dosemuold.html
+## http://www.dosemu.org/docs
+sudo aptitude install dosemu
+

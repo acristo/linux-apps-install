@@ -1,0 +1,227 @@
+    1  sudo apt-get install aptitude
+    2  sudo aptitude update
+    3  sudo aptitude upgrade
+    4  exit
+    5  sudo /opt/turtl/turtl
+    6  sudo add-apt-repository ppa:atareao/telegram
+    7  sudo aptitude update
+    8  sudo apt-get install telegram
+    9  cd Downloads/
+   10  ls
+   11  tar -xf turtl-linux64-0.6.4.tar.bz2 
+   12  cd turtl-linux64/
+   13  ls
+   14  ./install.sh 
+   15  sudo ./install.sh 
+   16  krusader
+   17  sudo apt install krusader
+   18  cd ..
+   19  ls
+   20  sudo dpkg -i megasync-xUbuntu_16.04_amd64.deb
+   21  sudo add-apt-repository ppa:jtaylor/keepass
+   22  sudo aptitude update
+   23  sudo apt-get install keepass2
+   24  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+   25  sudo gedit
+   26  sudo kate /etc/apt/sources.list
+   27  sudo aptitude update
+   28  apt-key adv --keyserver keys.gnupg.net --recv-key 'E19F5F87128899B192B1A2C2AD5F960A256A04AF'
+   29  apt-key add jranke.asc
+   30  sudo apt-key add jranke.asc
+   31  sudo apt-key add jranke.asc.
+   32  sudo aptitude update
+   33  sudo kate /etc/apt/sources.list
+   34  sudo aptitude update
+   35  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+   36  gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+   37  gpg -a --export E084DAB9 | sudo apt-key add -
+   38  sudo aptitude update
+   39  gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E084DAB9
+   40  gpg -a --export E084DAB9 | sudo apt-key add -
+   41  sudo aptitude update
+   42  sudo kate key.txt
+   43  sudo apt-key add key.txt
+   44  sudo kate key.txt
+   45  sudo apt-key add key.txt
+   46  sudo apt-get install r-base-dev
+   47  sudo aptitude install r-base-dev
+   48  sudo aptitude install r-base
+   49  R
+   50  sudo aptitude install r-base-core
+   51  R
+   52  sudo synaptics
+   53  sudo synaptic
+   54  sudo aptitude install synaptic
+   55  sudo synaptics
+   56  sudo synaptic
+   57  sudo kate /etc/apt/sources.list
+   58  sudo echo "deb http://cran.rstudio.com/bin/linux/ubuntu xenial/" | sudo tee -a /etc/apt/sources.list
+   59  sudo kate /etc/apt/sources.list
+   60  sudo aptitude update
+   61  gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+   62  gpg -a --export E084DAB9 | sudo apt-key add -
+   63  sudo apt-get update
+   64  sudo apt-get install r-base r-base-dev
+   65  R
+   66  sudo aptitude emacs
+   67  sudo aptitude install emacs
+   68  sudo aptitude install ess
+   69  sudo aptitude install filezilla
+   70  sudo apt-get install texlive-full
+   71  cd Downloads/
+   72  ls
+   73  sudo dpkg -i megasync-xUbuntu_16.04_amd64.deb
+   74  sudo dpkg -i dropbox_2015.10.28_amd64.deb 
+   75  sudo aptitude install gkrellm
+   76  exit
+   77  sudo aptitude install libappindicator3-1
+   78  dropbox 
+   79  dropbox status
+   80  dropbox stop
+   81  dropbox ls
+   82  sudo apt-get --purge remove qgis
+   83  sudo apt autoremove --purge-remove 
+   84  sudo apt autoremove
+   85  sudo aptitude update
+   86  sudo sh -c 'echo "deb http://qgis.org/ubuntugis xenial main" >> /etc/apt/sources.list'
+   87  sudo sh -c 'echo "deb-src http://qgis.org/ubuntugis xenial main" >> /etc/apt/sources.list'
+   88  sudo aptitude update
+   89  wget -O - http://qgis.org/downloads/qgis-2017.gpg.key | gpg --import
+   90  gpg --export --armor CAEB3DC3BDF7FB45 | sudo apt-key add -
+   91  sudo aptitude update
+   92  sudo apt-get install qgis python-qgis qgis-plugin-grass
+   93  sudo aptitude install qgis python-qgis qgis-plugin-grass
+   94  sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+   95  sudo aptitude update
+   96  sudo apt-get install saga
+   97  saga_gui
+   98  qgis
+   99  sudo aptitude install qgis python-qgis qgis-plugin-grass
+  100  qgis
+  101  sudo synaptic
+  102  sudo aptitude update
+  103  sudo kate /etc/apt/sources.list
+  104  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+  105  sudo aptitude update
+  106  sudo aptitude upgrade
+  107  exit
+  108  sudo aptitude install wine
+  109  sudo aptitude install vlc
+  110  exit
+  111  sudo krusader
+  112  exit
+  113  pdflatex \\nonstopmode\\input daso.tex
+  114  gimp
+  115  sudo apt install gimp
+  116  R
+  117  exit
+  118  sudo aptitude update
+  119  sudo aptitude upgrade
+  120  sudo aptitude install rdesktop 
+  121  sudo aptitude install goldendict
+  122  sudo aptitude install calibre
+  123  sudo aptitude install gimp
+  124  sudo aptitude install jedit
+  125  sudo aptitude install jabref
+  126  sudo aptitude install mendeley
+  127  sudo aptitude install splite
+  128  sudo aptitude install sqlite
+  129  sudo aptitude install postgresql
+  130  sudo apt-get install git
+  131  sudo apt-get install chromium
+  132  sudo apt-get install chromium-bsu
+  133  exit
+  134  rdesktop -u acristo -a 16 -k es -g 1690x975 -N -r disk:acristo=/home/cristobal
+  135  rdesktop -u acristo -a 16 -k es -g 1690x975 -N -r disk:acristo=/home/cristobal 157.88.224.252
+  136  exit
+  137  rdesktop -u acristo -a 16 -k es -g 1690x975 -N -r disk:acristo=/home/cristobal 157.88.224.252
+  138  sudo apt-get install duplicati
+  139  exit
+  140  sudo apt-get update && sudo apt-get install libgdal-dev libproj-dev
+  141  exit
+  142  sudo apt-get install mercurial
+  143  sudo apt-get install inkscape
+  144  sudo apt-get install unetbootin
+  145  sudo apt-get install bazaar
+  146  sudo apt-get install respin
+  147  sudo apt-get install imager
+  148  sudo apt-get install distroshare-ubuntu-imager
+  149  sudo apt-get install linuxrespin
+  150  sudo /opt/turtl/turtl
+  151  exit
+  152  R
+  153  exit
+  154  cd Desktop/
+  155  ls
+  156  cd Disk.IUGFS
+  157  ls
+  158  mv Protege-5.2.0-linux.tar.gz ../../Downloads/
+  159  mv Protege-5.2.0-linux.tar.gz ../../Downloads
+  160  ls ../../Downloads/
+  161  ls ../../Downloads
+  162  cd ../../Downloads
+  163  ls
+  164  tar zxvf Protege-5.2.0-linux.tar.gz 
+  165  cd Protege-5.2.0/
+  166  ls
+  167  run.sh
+  168  ./run.sh
+  169  exit
+  170  sudo apt-add-repository ppa:kubuntu-ppa/backports
+  171  sudo aptitude update
+  172  sudo aptitude full-upgrde
+  173  sudo apt full-upgrde
+  174  sudo aptitude full-upgrade
+  175  apper
+  176  sudo aptitude install apper
+  177  exit
+  178  sudo aptitude update
+  179  sudo aptitude upgrade
+  180  cd Downloads/Systemback_Install_Pack_v1.8.402/
+  181  ls
+  182  /install.sh
+  183  ./install.sh
+  184  sudo ./install.sh
+  185  sytemback
+  186  exit
+  187  kdiff3
+  188  sudo aptitude install kdiff3
+  189  krename
+  190  sudo aptitude install krename
+  191  lha
+  192  sudo aptitude install lha
+  193  sudo aptitude install lhasa
+  194  arj
+  195  sudo aptitude install arj
+  196  unarj
+  197  sudo aptitude install unar
+  198  unace
+  199  sudo aptitude install unace
+  200  rar
+  201  sudo aptitude install rar
+  202  rpm
+  203  sudo aptitude install rpm
+  204  exit
+  205  sudo aptitude install mc
+  206  sudo mc
+  207  exit
+  208  sudo aptitude install qgis
+  209  sudo kate /etc/apt/sources.list
+  210  sudo aptitude update
+  211  sudo aptitude upgrade
+  212  sudo kate /etc/apt/sources.list
+  213  wget -O - https://qgis.org/downloads/qgis-2017.gpg.key | gpg --import
+  214  gpg --fingerprint CAEB3DC3BDF7FB45
+  215  sudo aptitude update
+  216  sudo aptitude upgrade
+  217  sudo aptitude install qgis  python-qgis qgis-plugin-grass
+  218  sudo aptitude update
+  219  sudo kate /etc/apt/sources.list
+  220  sudo aptitude update
+  221  sudo kate /etc/apt/sources.list
+  222  sudo aptitude update
+  223  sudo apt-get --purge remove qgis
+  224  sudo apt autoremove --purge-remove 
+  225  sudo apt autoremove 
+  226  exit
+  227  history>history.txt

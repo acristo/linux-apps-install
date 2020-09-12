@@ -1,0 +1,27 @@
+PREFIX ifn: <http://gsic.uva.es/ifn3/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?plot ?alltrees ?p ?o where {
+#select distinct(?p) where {
+
+
+?tree a ifn:Tree , ?species ;
+   ifn:inPlot ?plot .
+
+?species rdfs:label ?label .
+
+?plot <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ?lat ;
+   <http://www.w3.org/2003/01/geo/wgs84_pos#long> ?long .
+
+?alltrees ifn:inPlot ?plot . 
+
+?alltrees ?p ?o .
+
+ FILTER regex(?label, "pino", "i") 
+     
+#FILTER ( ?lat < 28)
+#FILTER ( ?lat > 28)
+#FILTER ( ?long < 28)
+#FILTER ( ?long > 28)
+
+} LIMIT 1000

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#sudo apt-get install aptitude -y
+sudo apt-get install aptitude -y
 sudo aptitude update
 sudo aptitude install gkrellm
 sudo aptitude install -y build-essential

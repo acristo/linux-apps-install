@@ -1,0 +1,263 @@
+    1  apt-get install aptitude
+    2  aptitude
+    3  apt install aptitude
+    4  apt update
+    5  apt upgrade
+    6  apt install keepass2
+    7  apt get install aptitude
+    8  apt-get install aptitude
+    9  aptitude update
+   10  aptitude upgrade
+   11  mount -t cifs -o username=acristo,password=Acristo878,uid=1000,gid=1000 //157.88.224.249/home /home/cristobal/mnt/cristobal-ftp
+   12  aptitude install mc
+   13  aptitude install gkrelm
+   14  aptitude install gkrellm
+   15  aptitude install emacs
+   16  unames
+   17  uname
+   18  uname -a
+   19  deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/
+   20  mouse /etc/sources.list
+   21  mousepad /etc/sources.list
+   22  leafpad /etc/apt/sources.list
+   23  aptitude update
+   24  aptitude upgrade
+   25  leafpad /etc/apt/sources.list
+   26  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+   27  gpg -a --export E298A3A825C0D65DFD57CBB651716619E084DAB9 | sudo apt-key add -
+   28  gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+   29  gpg -a --export E298A3A825C0D65DFD57CBB651716619E084DAB9 | sudo apt-key add -
+   30  aptitude update
+   31  aptitude install r-base r-base-dev
+   32  aptitude update
+   33  aptitude upgrade
+   34  gpg --keyserver hkp://pgp.mit.edu --recv-key 68E0DB0F
+   35  exit
+   36  gpg --keyserver hkp://pgp.mit.edu --recv-key 68E0DB0F
+   37  aptitude install vlc
+   38  aptitude install remmina
+   39  aptitude install gimp
+   40  aptitude install mendeley
+   41  aptitude install inkscape jedit jabref github
+   42  aptitude install inkscape jedit jabref
+   43  leafpad /etc/apt/sources.list
+   44  wget -O - https://qgis.org/downloads/qgis-2019.gpg.key | gpg --import
+   45  gpg --fingerprint 51F523511C7028C3
+   46  gpg --export --armor 51F523511C7028C3 | sudo apt-key add -
+   47  aptitude update
+   48  aptitude install  qgis qgis-plugin-grass
+   49  sudo add-apt-repository ppa:kelleyk/emacs
+   50  aptitude update
+   51  aptitude install emacs26
+   52  aptitude install ess
+   53  aptitude install krusader
+   54  cd Downloads/
+   55  ls
+   56* tar xvf tsetup.1.8.15.tar.xz -C /tmp/ likelihood_1.7.tar.gz [B
+   57  sudo chown -R root:root /tmp/Telegram/
+   58  sudo mv /tmp/Telegram/ /opt/
+   59  sudo ln -s /opt/Telegram/Telegram /usr/local/bin/Telegram
+   60  Telegram
+   61  wget https://linux.dropbox.com/packages/ubuntu/
+   62  ls -l
+   63  wget https://linux.dropbox.com/packages/ubuntu/dropbox_2019.02.14_amd64.deb
+   64  ls -l
+   65  sudo dpkg -i dropbox_2019.02.14_amd64.deb 
+   66  aptitude install filezilla
+   67  aptitude update
+   68  aptitude upgrade
+   69  sudo dpkg -i megasync-xUbuntu_18.04_amd64.deb 
+   70  aptitude update
+   71  sudo dpkg -i megasync-xUbuntu_18.04_amd64.deb 
+   72  aptitude install 7z
+   73  aptitude install 7zip
+   74  aptitude install p7zip
+   75  aptitude install rar
+   76  aptitude install arj
+   77  aptitude install unace
+   78  aptitude update
+   79  aptitude upgrade
+   80  aptitude update
+   81  emacs
+   82  emacs25
+   83  emacs26
+   84  cd ..
+   85  emacs
+   86  aptitude remove emacs25
+   87  emacs
+   88  aptitude install ess
+   89  cd Downloads/
+   90  dpkg -i mendeleydesktop_1.19.4-stable_amd64.deb 
+   91  mendeley
+   92  wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh
+   93  sh /dev/stdin
+   94  aptitude updaet
+   95  aptitude update
+   96  aptitude upgrade
+   97  aptitude install synaptic
+   98  sudo dpkg -i megasync-xUbuntu_18.04_amd64.deb 
+   99  aptitude update
+  100  aptitude upgrade
+  101  dpkg -i rstudio-1.2.5019-amd64.deb 
+  102  exit
+  103  aptitude install dolphin
+  104  cd Downloads/
+  105  dpkg -i rstudio-1.2.5019-amd64.deb 
+  106  aptitude install auctex
+  107  exit
+  108  apt-get install -f
+  109  aptitude update
+  110  aptitude upgrade
+  111  aptitude remove emacs25
+  112  apt-get install -f
+  113  aptitude upgrade
+  114  aptitude update
+  115  aptitude upgrade[B
+  116  aptitude install lyx
+  117  aptitude install xubuntu-desktop
+  118  exit
+  119  cd Downloads/
+  120  ls
+  121  cp xubuntu-18.04.3-desktop-amd64.iso /dev/sdc
+  122  exit
+  123  aptitude update auctex
+  124  aptitude install auctex
+  125  aptitude remove emacs25
+  126  apt-get install -f
+  127  aptitude update
+  128  aptitude upgrade
+  129  exit
+  130  aptitude update
+  131  aptitude upgrade
+  132  cd ..
+  133  ll
+  134  cd ftp
+  135  cd mnt/
+  136  ls
+  137  cd cristobal-ftp/
+  138  ll
+  139  ll Disk.IUGFS/
+  140  ll Disk.IUGFS/Disk.IUGFS/
+  141  rm Disk.IUGFS/Disk.IUGFS
+  142  cd Disk.IUGFS/
+  143  rm -r Disk.IUGFS
+  144  cd /media/cristobal/bak/Disk.IUGFS
+  145  rm -r Disk.IUGFS
+  146  exit
+  147  aptitude install -y mc
+  148  aptitude install -y synaptic
+  149  aptitude install -y krusader
+  150  aptitude install -y filezilla
+  151  aptitude install -y telegram-desktop
+  152  aptitude install -y dconf-tools | aptitude install -y software-properties-common
+  153  aptitude install -y goldendict
+  154  aptitude install -y git
+  155  aptitude install -y mercurial
+  156  aptitude install -y gpsbabel
+  157  add-apt-repository ppa:kelleyk/emacs | aptitude install -y emacs
+  158  aptitude update
+  159  aptitude uninstall emacs25
+  160  apt uninstall emacs25
+  161  aptitude remove emacs25
+  162  aptitude update
+  163  aptitude upgrade
+  164  aptitude remove emacs25
+  165  emacs
+  166  aptitude update
+  167  aptitude upgrade
+  168  apt install apt-transport-https software-properties-common
+  169  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+  170  add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+  171  aptitude update | aptitude install -y r-base | aptitude install -y build-essential
+  172  aptitude update 
+  173  cd Downloads/
+  174  wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5019-amd64.deb
+  175  dpkg -i ./Downloads/rstudio-1.2.5019-amd64.deb
+  176  ll rst*
+  177  dpkg -i ./rstudio-1.2.5019-amd64.deb
+  178  aptitude install -y jedit
+  179  aptitude install -y jabref
+  180  aptitude install -y inkscape
+  181  aptitude install -y gimp
+  182  aptitude install -y wine-stable
+  183  aptitude install -y vlc
+  184  wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
+  185  aptitude install -y auctex
+  186  aptitude install -y lyx
+  187  add-apt-repository 'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bionic contrib'
+  188  aptitude update
+  189  aptitude upgrade
+  190  wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+  191  aptitude update
+  192  aptitude install virtualbox-6.0
+  193  add-apt-repository ppa:alessandro-strada/ppa | apt-get update | apt-get install google-drive-ocamlfuse
+  194  add-apt-repository ppa:alessandro-strada/ppa
+  195  apt-get update
+  196  apt-get install google-drive-ocamlfuse
+  197  apt --fix-broken install
+  198  aptitude update
+  199* 
+  200  apt --fix-broken install
+  201  add-apt-repository ppa:alessandro-strada/ppa
+  202  apt-get update
+  203  apt-get install google-drive-ocamlfuse
+  204  google-drive-ocamlfuse
+  205  wget https://syncandshare.lrz.de/client_deployment/LRZ_Sync_Share_Latest_amd64.deb
+  206  wget https://download.nextcloud.com/desktop/releases/Linux/Nextcloud-2.6.1-x86_64.AppImage
+  207  dpkg -i LRZ_Sync_Share_Latest_amd64.deb
+  208  ll
+  209  mount -t cifs -o username=acristo,password=Acristo878,uid=1000,gid=1000 //157.88.224.249/home /home/cristobal/mnt/cristobal-ftp
+  210  ll  /home/cristobal/mnt/cristobal-ftp
+  211  ll  /home/cristobal/mnt/cristobal-ftp/Disk.IUGFS/
+  212  sudo su
+  213  exit
+  214  add-apt-repository ppa:nextcloud-devs/client
+  215  aptitude update
+  216  aptitude install -y nextcloud
+  217  aptitude install -y nextcloud-client
+  218  ll  /home/cristobal/mnt/cristobal-ftp/Disk.IUGFS/
+  219  mount -t cifs -o username=acristo,password=Acristo878,uid=1000,gid=1000 //157.88.224.249/home /home/cristobal/mnt/cristobal-ftp
+  220  ll  /home/cristobal/mnt/cristobal-ftp/Disk.IUGFS/
+  221  cd Downloads/
+  222  wget https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
+  223  ll fi*
+  224  chown fiji-linux64.zip cristobal cristobal
+  225  user
+  226  users
+  227  chown fiji-linux64.zip cristobal
+  228  ll fi*
+  229  chown cristobal:cristobal fiji-linux64.zip
+  230  ll fi*
+  231  aptitude install -y openjdk-jre
+  232  aptitude install -y openjdk-9-jre
+  233  aptitude install -y openjdk-8-jre
+  234  exit
+  235  aptitude update
+  236  aptitude upgrade
+  237  history > ./Disk.IUGFS/history2.txt
+  238  R
+  239  cd Downloads/
+  240  mkdir R.pack
+  241  cd R.pack/
+  242* wget -q http://cran.csiro.au/src/contrib/likelihood_1.5.tar.gz 
+  243  R CMD INSTALL /likelihood_1.5.tar.gz
+  244  R CMD INSTALL likelihood_1.5.tar.gz
+  245  ll
+  246  wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+  247  sudo apt-get install apt-transport-https
+  248  echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+  249  sudo apt-get update
+  250  sudo apt-get install sublime-text
+  251  wget -q https://cran.rediris.es/src/contrib/likelihood_1.5.tar.gz
+  252  ll
+  253  cd ..
+  254  ll
+  255  ll l*
+  256  ll s*
+  257  cd R.pack/
+  258  wget -q https://cran.rediris.es/src/contrib/likelihood_1.7.tar.gz
+  259  ll l*
+  260  aptitude update
+  261  history > ./Disk.IUGFS/history2.txt
+  262  history > ~/Disk.IUGFS/history2.txt
+  263  history > /home/cristobal/Disk.IUGFS/history2.txt

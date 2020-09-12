@@ -1,0 +1,10 @@
+find . -depth -name "*.txt" -exec sh -c 'f="{}"; mv -- "$f" "${f%.txt}.php"' \;
+
+for file in *.txt; do mv -- "$file" "${file%.txt}.php" done
+
+for file in *é*; do mv -- "$file" "${file%.txt}.php" done
+
+
+rename 's/é/e/gi' *
+
+find . -depth -name "*é*" -exec sh -c 'f="{}"; ;

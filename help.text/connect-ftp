@@ -1,0 +1,46 @@
+sudo mount -t cifs -o username=${USER},password=${PASSWORD} //server-address/folder /mount/path/on/ubuntu
+sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g) //server-address/folder /mount/path/on/ubuntu
+sudo mount -t cifs -o username=${USER},password=${PASSWORD},uid=$(id -u),gid=$(id -g),forceuid,forcegid, //server-address/folder /mount/path/on/ubuntu
+
+
+Acristo
+sudo mount -t cifs //157.88.224.249/home ~/mnt/cristobal-ftp -o username=acristo,password=Acristo878,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+SI
+
+bk-iufor-selvi
+sudo mount -t cifs //157.88.224.249/home ~/mnt/bk_iufor_selvi -o username=bk.iufor.selvi,password=iuFOR.252.252,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+SI
+
+data-iufor
+sudo mount -t cifs //157.88.224.249/home ~/mnt/data-iufor -o username=selvi.data,password=SelviData4,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+SI
+
+lfa-lidar
+sudo mount -t cifs //157.88.224.249/home ~/mnt/lfa-lidar -o username=FTP.tmp,password=LiDAR2FTP,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+SI
+
+
+
+
+
+
+
+bk-iufor-OLD
+sudo mount -t cifs //157.88.224.249/home ~/mnt/bk_iufor -o username=bk.iufor,password=iuFOR.251.252,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+NO
+Solo FTP with FileZilla
+
+video
+sudo mount -t cifs //157.88.224.249/home ~/mnt/video -o username=video,password=Vid30·=,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+NO
+
+Cores
+sudo mount -t cifs //157.88.224.249/home ~/mnt/cores -o username=cores,password=CRScrs289,uid=$(id -u),gid=$(id -g),forceuid,forcegid,noperm
+NO
+Solo FTP with FileZilla
+
+
+
+#### adding to /etc/fstab
+//address/location /mount/location cifs credentials=/location,uid=id,gid=id,umask=700 0 0
+//address/location /mount/location cifs username=username,password=password,noperm,vers=2.0 0 0

@@ -1,0 +1,12 @@
+### montar la unidad
+como root:
+ mount -t cifs -o username=acristo,password=Acristo878,uid=1000,gid=1000 //157.88.224.249/home /home/cristobal/mnt/cristobal-ftp
+
+### Recuperar copia de seguridad
+cp -rup /home/cristobal/mnt/cristobal-ftp/Disk.IUGFS /home/cristobal/
+cp -rup /media/cristobal/bak/Disk.IUGFS /home/cristobal/ 
+
+### Hacer copia de seguridad
+cp -rup /home/cristobal/Disk.IUGFS /home/cristobal/mnt/cristobal-ftp/
+cp -rup /home/cristobal/Disk.IUGFS /media/cristobal/bak/
+

@@ -1,0 +1,31 @@
+    1  users
+    2  user
+    3  userv
+    4  users -a
+    5  users -h
+    6  users --h
+    7  users --help
+    8  cat /etc/passwd | cut -d":" -f1 
+    9  cd ../shared
+   10  ls
+   11  mkdir R
+   12  cd R
+   13  ls /mnt/igfs-ftp/home/R
+   14  cp -R -u /mnt/igfs-ftp/home/R/methods .
+   15  cp -r -u /mnt/igfs-ftp/home/R/methods .
+   16  ls /mnt/igfs-ftp/home/R/methods/
+   17  ll /mnt/igfs-ftp/home/R/methods/
+   18  ll /mnt/igfs-ftp/home/R/
+   19  ll /mnt/igfs-ftp/home/R/methods/
+   20  cd ../cores/
+   21  ll /mnt/igfs-ftp/home/cores
+   22  ll /mnt/igfs-ftp/home/cores/TripletAguilar
+   23  cp -r -u /mnt/igfs-ftp/home/cores/TripletAguilar .
+   24  cd ..
+   25  cd cores
+   26  cp -r -u /mnt/igfs-ftp/home/cores/TripletAguilar .
+   27  sudo su
+   28  exit
+   29  sudo su
+   30  exit
+   31  history>hist.user.txt

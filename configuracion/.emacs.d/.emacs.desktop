@@ -1,0 +1,18 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Thu Jul 21 19:29:02 2016
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("NA" "species"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("/home/cristobal/Desktop/Disk.IUGFS/proyectos/SM4/Model/CodigoEspecÅÌfico/percentiles.cs" "~/Desktop/Disk.IUGFS/proyectos/SM4/Model" "~/.emacs" "~/Disk.IUGFS/proyectos/SM4/Model/2014_IBERO_Ppinaster_biomass.cs" "~/.emacs" "~/Desktop/Disk.IUGFS/proyectos/SM4/Manuals/ManualSM4/ManualModelizador-old.tex" "~/.emacs" "~/Desktop/Disk.IUGFS/proyectos/SM4/Manuals/ManualSM4/ManualModelizador.tex" "~/.emacs" "/home/cristobal/Desktop/Disk.IUGFS/proyectos/SM4/Manuals/ManualSM4/ManualModelizador.tex" "/home/cristobal/Desktop/Disk.IUGFS/cursos.realizados/2016.06.MovilidadInvestigador/cuestionario.2" "/home/cristobal/Desktop/Disk.IUGFS/cursos.realizados/2016.06.MovilidadInvestigador/cuestionario" "~/Desktop/Disk.IUGFS/R/ejemplos.r" "~/Desktop/Disk.IUGFS/R/icebreakeR/iceBrkR.r" "~/Desktop/Disk.IUGFS/R/icebreak.r" "~/Desktop/Disk.IUGFS/R/ejemplos.r" "/home/cristobal/Desktop/Disk.IUGFS/R/icebreakeR/iceBrkR.r" "~/Desktop/Disk.IUGFS/R/r-ge/" "~/Desktop/Disk.IUGFS/R/r-ge/access.queries" "~/Desktop/Disk.IUGFS/data/datos.selvicultura/DB_Structure.csv" "~/Desktop/Disk.IUGFS/SAS/SAScode/sas-GE/0.1.VariableDef_v5.sas" "~/Desktop/Disk.IUGFS/R/r-ge/" "~/Desktop/Disk.IUGFS/R/r-ge/read.original.mdb.data.r" "~/Desktop/Disk.IUGFS/tmp/eMacs/" "~/.emacs" "~/Desktop/Disk.IUGFS/R/r-ge/access.queries" "~/Desktop/Disk.IUGFS/SAS/SAScode/sas-GE/0.1.VariableDef_v5.sas" "~/Desktop/Disk.IUGFS/R/r-ge/" "~/Desktop/Disk.IUGFS/R/r-ge/read.original.mdb.data.r"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:

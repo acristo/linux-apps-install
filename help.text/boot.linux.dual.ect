@@ -1,0 +1,29 @@
+Primer arranque desde el pincho:
+1) En un terminal:
+ sudo -i
+2) Ahora que ya somos root,
+ passwd
+(para crear una nueva contraseña)
+3) mount /dev/sdxY /mnt
+(para montar la partición que queremos recuperar en el disco interno)
+4) sed -i "/root/ s/\!/$(grep root /etc/shadow|cut -f2 -d:)/" /mnt/etc/shadow
+(para trasladar la clave cifrada de root del pincho al linux a recuperar)
+5) update-grub
+(para añadir la partición de linux a la lista de arrancables desde el pincho)
+6) reboot
+ 
+Ahora, al arrancar desde el pincho, podemos elegir arrancar el linux interno
+desde  el propio GRUB, así que lo hacemos.
+ 
+Una vez llegamos, quitamos el pincho y
+ 
+1) En un terminal:
+  sudo -i
+1b) Si no sabemos claves de usuarios, Control-Alt-F2 para ir a los terminales
+  y nos identificamos como root con la clave del pincho
+ 
+2) grub-install /dev/sdx
+(para poner GRUB en el disco interno)
+3) update-grub
+(para actualizar el grub.cfg interno)
+4) reboot

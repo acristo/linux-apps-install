@@ -1,0 +1,167 @@
+    1  apt-get install aptitude
+    2  aptitude update
+    3  aptitude install gkrellm
+    4  aptitude install xubuntu-desktop
+    5  aptitude update
+    6  aptitude upgrade
+    7  exit
+    8  aptitude install telegram-desktop
+    9  history
+   10  history > install.txt
+   11  exit
+   12  sudo apt-get install -y software-properties-common
+   13  add-apt-repository ppa:deb http://ppa.launchpad.net/kelleyk/emacs/ubuntu bionic main
+   14  add-apt-repository ppa:"deb http://ppa.launchpad.net/kelleyk/emacs/ubuntu bionic main"
+   15  add-apt-repository ppa:emacs
+   16  add-apt-repository ppa:kelleyk/emacs
+   17  aptitude install emacs
+   18  aptitude install keepass2
+   19  apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+   20  add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+   21  aptitude update
+   22  aptitude install r-base
+   23  aptitude install ess
+   24  aptitude install emacs-ess
+   25  aptitude install rstudio
+   26  apt install apt-transport-https software-properties-common
+   27  aptitude install r-base-dev
+   28  apt install build-essential
+   29  ls Downloads/r*
+   30  dpkg -i ~/Downloads/rstudio-1.2.5019-amd64.deb
+   31  dpkg -i Downloads/rstudio-1.2.5019-amd64.deb
+   32  aptitude update
+   33  aptitude upgrade
+   34  grep -rnw '~' -e 'cristobal/descargas'
+   35  grep -rnw '~/' -e 'cristobal/descargas'
+   36  grep -rnw '/home/cristobal/' -e 'cristobal/descargas'
+   37  grep -rn '/home/cristobal/' -e 'cristobal/descargas'
+   38  grep -r '/home/cristobal/' -e 'cristobal/descargas'
+   39  grep -r '/home/cristobal/' -e '/home/cristobal/Descargas'
+   40  dconf-editor
+   41  aptitude install dconf-tools
+   42  dconf-tools
+   43  dconf-editor
+   44  aptitude install krusader
+   45  aptitude install -y jedit
+   46  aptitude install -y jabref
+   47  aptitude install -y inkscape
+   48  aptitude install -y gimp
+   49  aptitude install -y wine
+   50  aptitude install -y wine-stable
+   51  add-apt-repository 'deb https://qgis.org/ubuntu-ltr bionic main'
+   52  wget -O - https://qgis.org/downloads/qgis-2019.gpg.key | gpg --import
+   53  gpg --fingerprint 51F523511C7028C3
+   54  aptitude update
+   55  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
+   56  aptitude update
+   57  sudo apt-get install qgis qgis-plugin-grass
+   58  wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
+   59  mousepad  /etc/systemd/logind.conf
+   60  systemctl restart systemd-logind.service
+   61  aptitude install -y vlc
+   62  wget https://www.mendeley.com/autoupdates/installer/Linux-x64/stable-incoming
+   63  ls
+   64  ll
+   65  wget https://www.mendeley.com/autoupdates/installer/Linux-x64/stable-incoming/mendeleydesktop-1.19.4-linux-x86_64.tar.bz2
+   66  cd Downloads/
+   67  ls
+   68  ll
+   69  tar -xvjf mendeleydesktop-1.19.4-linux-x86_64.tar.bz2 
+   70  ll
+   71  cd mendeleydesktop-1.19.4-linux-x86_64
+   72  ll
+   73  ./bin/mendeleydesktop
+   74  cd ..
+   75  aptitude update
+   76  aptitude upgrade
+   77  7zip
+   78  aptitude install -y p7zip
+   79  aptitude install -y rar
+   80  aptitude install -y unace
+   81  aptitude install -y filezilla
+   82  aptitude install -y duplicaty
+   83  aptitude install -y goldendict
+   84  aptitude install -y github
+   85  aptitude install -y git
+   86  aptitude install -y mercurial
+   87  aptitude install -y gebabbel
+   88  aptitude install -y gebabel
+   89  aptitude install -y gpsbabbel
+   90  aptitude install -y gpsbabel
+   91  aptitude install -y auctex
+   92  aptitude install -y ess
+   93  aptitude install -y lyx
+   94  ls me*
+   95  ls meg*
+   96  cd ..
+   97  dpkg -i ./Downloads/megasync-xUbuntu_18.04_amd64.deb
+   98  aptitude install libc-ares2 
+   99  dpkg -i ./Downloads/megasync-xUbuntu_18.04_amd64.deb
+  100  aptitude install -y ocamlfuse
+  101  aptitude install -y nextcloud
+  102  cd Downloads/
+  103  wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb
+  104  dpkg -i dropbox_2019.02.14_amd64.deb
+  105  ls dro*
+  106  ll
+  107  dpkg -i dropbox_2019.02.14_amd64.deb
+  108  aptitude install -y libpango1.0-0
+  109  dpkg -i dropbox_2019.02.14_amd64.deb
+  110  aptitude install -y virtualbox
+  111  virtualbox
+  112  aptitude install -y virtualbox-dkms
+  113  aptitude install linux-headers-generic
+  114  virtualbox
+  115  ls 
+  116  ll
+  117  dpkg -i virtualbox-6.0_6.0.14-133895~Ubuntu~bionic_amd64.deb
+  118  aptitude remove virtualbox*
+  119  aptitude update
+  120  aptitude upgrade
+  121  ll
+  122  dpkg -i virtualbox-6.0_6.0.14-133895~Ubuntu~bionic_amd64.deb 
+  123  aptitude
+  124  synaptic
+  125  aptitude install -y synaptic
+  126  synaptic
+  127  dpkg -i virtualbox-6.0_6.0.14-133895~Ubuntu~bionic_amd64.deb 
+  128  virtualbox
+  129  dmesg
+  130  add-apt-repository 'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bionic contrib'
+  131  wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+  132  apt-get update
+  133  apt-get install virtualbox-6.0
+  134  apt autoremove
+  135  B9F8 D658 297A F3EF C18D  5CDF A2F6 83C5 2980 AECF
+  136  Oracle Corporation (VirtualBox archive signing key) <info@virtualbox.org>
+  137  apt-get update
+  138  google-drive-ocamlfuse
+  139  https://syncandshare.lrz.de/client_deployment/LRZ_Sync_Share_Latest_amd64.deb
+  140  ls
+  141  dpkg -i LRZ_Sync_Share_Latest_amd64.deb
+  142  exit
+  143  aptitutde install mc
+  144  aptitude install mc
+  145  lshw -C network
+  146  apt-get install --reinstall git dkms build-essential linux-headers-$(uname -r)
+  147  git clone https://github.com/tomaspinho/rtl8821ce
+  148  cd rtl8821ce/
+  149  chmod +x dkms-install.sh 
+  150  chmod +x dkms-remove.sh
+  151  ./dkms-install.sh
+  152  exit
+  153  aptitude update
+  154  aptitude upgrade
+  155  aptitude install git
+  156  aptitude update
+  157  aptitude upgrade
+  158  aptitude update
+  159  aptitude upgrade
+  160  aptitude update
+  161  aptitude upgrade
+  162  aptitude install -y dkms git
+  163  aptitude install -y bc module-assistant build-essential
+  164  m-a prepare
+  165  cd Downloads/
+  166  ll
+  167  history > ../Disk.IUGFS/history.txt

@@ -1,0 +1,211 @@
+    1  dmesg 
+    2  dmesg -w
+    3  fdisk -l
+    4  dmesg -W
+    5  dmesg -w
+    6  cd /boot/grub/
+    7  vi grub.cfg 
+    8  vi /etc/fstab 
+    9  mount
+   10  fdisk -l
+   11  mount
+   12  mount /dev/sdb5 /media/sdb5
+   13  mkdir /media/sdb5
+   14  mount /dev/sdb5 /media/sdb5
+   15  ls /media/sdb5/
+   16  ls /media/sdb5/cristobal/
+   17  umount /media/sdb5 
+   18  fdisk -l /dev/sdb
+   19  mount /dev/sdb7 /media/sdb5/
+   20  ls /media/sdb5
+   21  fdisk /dev/sdb
+   22  blkid /dev/sda
+   23  blkid 
+   24  fdisk /dev/sdb
+   25  blkid /dev/sdb
+   26  blkid /dev/sdc
+   27  blkid /dev/sda
+   28  ls /media/sd*
+   29  ls /media/s*
+   30  ll
+   31  ll /dev
+   32  ll /dev/sd*
+   33  fdisk -l
+   34  exit
+   35  ll /dev/sd*
+   36  ll /dev/sdb*
+   37  fdisk -l
+   38  fdisk /dev/sdb
+   39  history>/home/cristobal/history.root
+   40  fdisk -l
+   41  clear
+   42  fdisk -l
+   43  dmesg
+   44  lsscsi
+   45  apt install lsscsi
+   46  dpkg --configure -a
+   47  apt install lsscsi
+   48  apt-get install lsscsi
+   49  dmesg -l
+   50  dmesg -w
+   51  dmesg -W
+   52  dmesg /dev/sd*
+   53  clear
+   54  dmesg -w
+   55  fdisk -l
+   56  blkid /dev/sdb
+   57  fdisk /dev/sdb
+   58  exit
+   59  fdisk /dev/sdb
+   60  ls /proc
+   61  call /proc/partitions 
+   62  cach /proc/partitions 
+   63  ls /proc/partitions 
+   64  cd /proc/partitions 
+   65  print /proc/partitions 
+   66  less /proc/partitions 
+   67  ls /
+   68  ls -l /
+   69  mkdir /data
+   70  ls -l /
+   71  less /proc/partitions 
+   72  blkid /dev/sdb
+   73  blkid /dev/sdb1
+   74  dmesg -w
+   75  kate /etc/fstab
+   76  blkid /dev/sdb1
+   77  blkid /dev/sda1
+   78  kate /etc/fstab
+   79  exti
+   80  exit
+   81  blkid /dev/sd
+   82  blkid /dev/sda
+   83  blkid /dev/sdb
+   84  dmesg -w
+   85  dmesg 
+   86  clear
+   87  dmesg 
+   88  ll /dev/sd*
+   89  dmesg 
+   90  fdisk /dev/sdb
+   91  format
+   92  fdisk -l
+   93  mkfs.ext4 /dev/sdb1
+   94  fdisk -l
+   95  mount /dev/sdb1 /data
+   96  kate /etc/fstab
+   97  exit
+   98  journalctl -xb
+   99  kate /etc/fstab
+  100  ed /etc/fstab
+  101  exit
+  102  fdisk -l
+  103  mkfs.ext4 /dev/sdb1
+  104  exit
+  105  cd /boot/
+  106  ls
+  107  ll
+  108  cd grub/
+  109  ls
+  110  ll
+  111  cat grub.cfg 
+  112  ll
+  113  cd locale/
+  114  ls
+  115  ll
+  116  cd ,,
+  117  cd ..
+  118  ll
+  119  grub-install -V
+  120  cd /etc/default/grub 
+  121  ls
+  122  ll
+  123  kate /etc/default/grub &
+  124  cd ../
+  125  ls
+  126  ll
+  127  cd ..
+  128  cd etc/
+  129  ll
+  130  ll gr*
+  131  cd grub.d/
+  132  ll
+  133  cat README 
+  134  cp /etc/default/grub /etc/default/grub.bak
+  135  cat 00_header 
+  136  cat 10_linux 
+  137  ll
+  138  cat 40_custom 
+  139  cat 30_uefi-firmware 
+  140  aptitude
+  141  aptitude update
+  142  aptitude upgrade
+  143  exit
+  144  aptitude update
+  145  aptitude upgrade
+  146  clear
+  147  ll /dev/sd*
+  148  fdisk .l
+  149  fdisk -l
+  150  gparted
+  151  dmesg| less
+  152  grub-install /dev/sdb
+  153  fdisk /dev/sdb
+  154  gdisk
+  155  fdisk /dev/sdb
+  156  grub-install /dev/sdb
+  157  fdisk /dev/sdb
+  158  fdisk -l
+  159  reboot
+  160  fdisk -l
+  161  dmesg
+  162  dmesg -w
+  163  fdisk -l
+  164  dd if=/dev/zero of=/dev/sdb bs=$((1024*1024)) count=100
+  165  fdisk /dev/sdb
+  166  grub-install /dev/sdb
+  167  fdisk /dev/sdb
+  168  grub-install /dev/sdb
+  169  update-grub
+  170  poweroff
+  171  fdisk -l
+  172  dmesg -w
+  173  dmesg | less
+  174  dmesg -w
+  175  cd /etc/acpi/
+  176  ls
+  177  less undock.sh 
+  178  mount
+  179  cat undock.sh 
+  180  ls /sys/devices/platform/dock.*
+  181  cat /sys/devices/platform/dock.0/docked 
+  182  cat /sys/devices/platform/dock.1/docked 
+  183  cat /sys/devices/platform/dock.1/undock
+  184  find /sys/devices/platform/dock.*
+  185  find /sys/devices/platform/dock.* -exec ls -ld {} \;
+  186  cat /sys/devices/platform/dock.1/docked 
+  187  cat /sys/devices/platform/dock.0/docked 
+  188  cat /sys/devices/platform/dock.*/docked 
+  189  ls /sys/block/
+  190  poweroff
+  191  dmesg -w
+  192  acpi_listen 
+  193  service acpid start
+  194  acpi_listen 
+  195  dmesg -w
+  196  fdisk -l
+  197  ps -efa | grep acpi
+  198  acpi_available 
+  199  acpi_available -?
+  200  man acpi_available 
+  201  ls /proc/acpi/
+  202  apt-cache search acpi
+  203  apt-get update
+  204  apt-get install acpi-support acpid acpitool acpitail acpidump 
+  205  apt-get install toshset 
+  206  man toshset
+  207  acpidump
+  208  acpidump|less
+  209  acpitail 
+  210  echo 1 > /sys/devices/platform/dock.0/undock 
+  211  history >/home/cristobal/Desktop/history02.root
