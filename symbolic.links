@@ -1,0 +1,14 @@
+
+ln -s /data/cristobal/Disk.IUGFS ~/Disk.IUGFS
+ln -s /data/cristobal/Disk.IUGFS.stable ~/Disk.IUGFS.stable
+ln -s /data/cristobal/github ~/github
+ln -s /data/cristobal/github.personal ~/github.personal
+ln -s /data/cristobal/simanfor ~/simanfor
+ln -s /data/cristobal/Music ~/music
+
+
+ln -s /data/cristobal/ ~/
+ln -s /data/cristobal/ ~/
+ln -s /data/cristobal/ ~/
+ln -s /data/cristobal/ ~/
+

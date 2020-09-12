@@ -6,6 +6,11 @@ cat /etc/*release
 
 sudo ~/.local/share/mendeleydesktop
 
+
+
+#### git configuration help-web-page 
+# https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html
+
 git remote add origin https://github.com/acristo/linux-apps-install.git
 
 git clone https://github.com/acristo/linux-apps-install.git
@@ -16,6 +21,16 @@ git config --global user.name "cristobal ordonez"
 git add .
 git commit -m "updating files"
 git push # lleva cambios locales al remoto
+
+#### store git credentials in linux machines
+# https://www.shellhacks.com/git-config-username-password-store-credentials/
+#Run the following command to enable credentials storage in your Git repository:
+git config credential.helper store
+#To enable credentials storage globally, run:
+git config --global credential.helper store
+
+#### git ssh access
+
 
 
 #branching
@@ -31,3 +46,24 @@ git checkout -b [name_of_your_new_branch]
 #Push the branch on github :
 git push origin [name_of_your_new_branch]
 
+
+
+
+
+how to create new git repository inside group: https://github.com/IUFOR-selvicultura
+
+command line:
+
+	create local repository: 
+	git init
+	
+	create remote repository from local one:
+	https://makandracards.com/kiat_git/24453-create-local-repository-and-push-to-remote
+	git remote add upstream https://user@bitbucket.org/team-or-user-name/myproject.git
+	git remote add upstream https://acristo@https://github.com/IUFOR-selvicultura/report.go_sigca.git
+	git push -u origin --all
+	
+	https://www.techrepublic.com/article/how-to-push-a-new-project-to-github/
+	git remote add origin https://github.com/USER/PROJECTNAME.git
+	git remote add origin https://github.com/IUFOR-selvicultura/report.go_sigca.git
+	

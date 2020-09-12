@@ -43,7 +43,7 @@ sudo aptitude install keepassxc -y
 sudo add-apt-repository ppa:kelleyk/emacs | sudo aptitude install -y emacs
 sudo apt install apt-transport-https software-properties-common
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
-sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
 sudo aptitude update 
 sudo aptitude install -y r-base
 
@@ -67,13 +67,14 @@ cd ~/Downloads
 tar -xvjf mendeleydesktop-1.19.4-linux-x86_64.tar.bz2 
 ./bin/mendeleydesktop
 
-sudo add-apt-repository 'deb https://qgis.org/ubuntu-ltr bionic main'
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
+sudo add-apt-repository 'deb https://qgis.org/ubuntu-ltr focal main'
+wget -qO - https://qgis.org/downloads/qgis-2020.gpg.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import
+sudo chmod a+r /etc/apt/trusted.gpg.d/qgis-archive.gpg
 sudo aptitude update
 sudo aptitude install qgis qgis-plugin-grass
 #########################################################################################################################
 # calibre
-wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
+#wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
 
 # inst chromium
 sudo aptitude install -y chromium-browser
@@ -84,21 +85,21 @@ sudo aptitude install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
 sudo aptitude install -f # fix installation errors
-
+cali
 ######################## cloud storage
 
 ### mega
-sudo aptitude install libc-ares2 
-sudo aptitude install libcrypto++6 
-sudo aptitude install libmediainfo0v5 
-sudo aptitude install libzen0v5 
+#sudo aptitude install libc-ares2 
+#sudo aptitude install libcrypto++6 
+#sudo aptitude install libmediainfo0v5 
+#sudo aptitude install libzen0v5 
 #https://mega.nz/sync
-sudo dpkg -i ./Downloads/megasync-xUbuntu_18.04_amd64.deb
+#sudo dpkg -i ./Downloads/megasync-xUbuntu_18.04_amd64.deb
 
 ### dropbox
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb
-aptitude install -y libpango1.0-0
-dpkg -i dropbox_2019.02.14_amd64.deb
+#wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.02.14_amd64.deb
+#aptitude install -y libpango1.0-0
+#dpkg -i dropbox_2019.02.14_amd64.deb
 
 ### ocamlfuse
 add-apt-repository ppa:alessandro-strada/ppa
@@ -123,9 +124,6 @@ sudo apt-get update
 sudo aptitude install -y nextcloud-client
 
 
-
-
-
 ###### One cloud client for linux
 ## Rclone
 # https://rclone.org/
@@ -135,76 +133,34 @@ curl https://rclone.org/install.sh | sudo bash
 
 ###### pdf viwers and utilities
 # pdf studio viewer
-wget https://download.qoppa.com/pdfstudioviewer/PDFStudioViewer_linux64.sh
-sh ./PDFStudioViewer_linux64.sh
+#wget https://download.qoppa.com/pdfstudioviewer/PDFStudioViewer_linux64.sh
+#sush ./PDFStudioViewer_linux64.sh
 
 
 ## signal
-# Step 1: Use curl to grab the repository key and install it to Ubuntu.
 curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
-# Step 2: Add the third party software source to Ubuntu by using the echo command.
 echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
-# Step 3: Using the apt update command, refresh Ubuntu’s package repositories and allow the third-party repo to set itself up.
-sudo aptitude update
-# Step 4: Install any pending software updates to your Linux PC with the upgrade command.
-sudo aptitude upgrade -y
-# Step 5: Install Signal to your Ubuntu PC with apt.
-sudo aptitude install signal-desktop -y
-
-
+sudo apt update && sudo apt install signal-desktop
 
 ########### java
 aptitude install -y openjdk-8-jre
 
 ########### imageJ
-wget https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
-unzip Downloads/fij*.zip -d ~
-alias fiji="~/Fiji.app/ImageJ-linux64"
-
-########### ejecución de archivos java jlnp; icedtea-netx
-sudo aptitude install icedtea-netx
-
-
-
+#wget https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
+#unzip Downloads/fij*.zip -d ~
+#alias fiji="~/Fiji.app/ImageJ-linux64"
 
 ########### sublime
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt-get install apt-transport-https
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo aptitude update && sudo aptitude install sublime-text -y
-
-
-############ install firefox esr
-sudo aptitude remove firefox
-sudo add-apt-repository ppa:mozillateam/ppa
-sudo aptitude update
-sudo aptitude install firefox-esr
-
+#wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+#sudo apt-get install apt-transport-https
+#echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+#sudo aptitude update && sudo aptitude install sublime-text -y
 
 ########################## virtualbox
-add-apt-repository 'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bionic contrib'
+add-apt-repository 'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian focal contrib'
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 sudo aptitude update
-sudo aptitude install virtualbox-6.0
-####### firmar virtual box modules
-# https://slimbook.es/tutoriales/linux/364-firmando-modulo-virtualbox-en-secureboot-uefi-solucion-a-kernel-driver-not-installed-rc-1908
-# https://gist.github.com/kiasaki/5f4f491201d621d93a7d719f46e04009
-modprobe vboxdrv
-sudo aptitude update
-sudo aptitude upgrade
-sudo aptitude install mokutil
-# Create signing keys
-openssl req -new -x509 -newkey rsa:2048 -keyout MOK.priv -outform DER -out MOK.der -nodes -days 36500 -subj "/CN=Virt Box Key/"
-# Sign the module (vboxdrv for this example)
-sudo /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(modinfo -n vboxdrv)
-# also sign: vboxnetadp vboxnetflt vboxpci
-sudo /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(modinfo -n vboxnetadp)
-sudo /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(modinfo -n vboxnetflt)
-sudo /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256 ./MOK.priv ./MOK.der $(modinfo -n vboxpci)
-# Register the keys to Secure Boot
-sudo mokutil --import MOK.der
-# Por último, reiniciamos el ordenador. Nos aparecerá una pantalla azul con una espera de teclado, pulsa la tecla que te pide para interrumpir el arranque.
-
+sudo aptitude install virtualbox
 
 ######## fonts intall
 # https://www.ostechnix.com/install-microsoft-windows-fonts-ubuntu-16-04/
@@ -231,32 +187,15 @@ sudo aptitude install kdenlive
 ## vokoscreen
 sudo aptitude update && sudo aptitude install vokoscreen  -y
 
-# text mdb utility
+# text utility
 # https://bioinf.shenwei.me/csvtk/
 ## https://github.com/shenwei356/csvtk/releases
 wget https://github.com/shenwei356/csvtk/releases/download/v0.19.1/csvtk_linux_amd64.tar.gz
 tar -zxvf *.tar.gz
 sudo cp csvtk /usr/local/bin/
 
-
 ## to prevent aye suffering
 # https://www.ostechnix.com/safeeyes-an-useful-linux-utility-that-prevents-eye-strain/
 sudo add-apt-repository ppa:slgobinath/safeeyes
 sudo aptitude update && sudo aptitude install safeeyes -y
 
-## to adjust monitor brigthness
-https://www.ostechnix.com/how-to-adjust-monitor-brightness-from-command-line-in-linux/
-https://unix.stackexchange.com/questions/356730/how-to-create-keyboard-shortcuts-for-screen-brightness-in-xubuntu-xfce-ubuntu/499429
-https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder/1060843#1060843
-
-# zotero
-sudo add-apt-repository ppa:smathot/cogscinl
-sudo aptitude update
-sudo aptitude install zotero-standalone 
- 
-# trello
-# https://www.maketecheasier.com/get-trello-desktop-client-linux/
-  
-
-
-######## docker
