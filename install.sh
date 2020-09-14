@@ -36,10 +36,6 @@ sudo aptitude install -y curl
 sudo add-apt-repository ppa:phoerious/keepassxc
 sudo aptitude install keepassxc -y
 
-
-
-#sudo aptitude install xubuntu-desktop
-
 sudo add-apt-repository ppa:kelleyk/emacs | sudo aptitude install -y emacs
 sudo apt install apt-transport-https software-properties-common
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
@@ -48,12 +44,12 @@ sudo aptitude update
 sudo aptitude install -y r-base
 
 # ess
-# aptitude install -y ess 
-# instalar directamente desde emacs
+sudo aptitude install -y ess 
+# tambien es necesario instalar desde emacs
 
-aptitude install -y auctex
-aptitude install -y lyx
+sudo aptitude install -y auctex lyx
 
+sudo apt install -y pandoc pandoc-citeproc
 
 sudo aptitude install -y libclang-dev
 cd ~/Downloads
@@ -75,6 +71,9 @@ sudo aptitude install qgis qgis-plugin-grass
 #########################################################################################################################
 # calibre
 #wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sh /dev/stdin
+sudo -v && 
+  wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | 
+  sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 
 # inst chromium
 sudo aptitude install -y chromium-browser
@@ -85,7 +84,8 @@ sudo aptitude install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
 sudo aptitude install -f # fix installation errors
-cali
+
+
 ######################## cloud storage
 
 ### mega
@@ -102,17 +102,17 @@ cali
 #dpkg -i dropbox_2019.02.14_amd64.deb
 
 ### ocamlfuse
-add-apt-repository ppa:alessandro-strada/ppa
-apt-get update
-apt-get install google-drive-ocamlfuse
-google-drive-ocamlfuse
+sudo add-apt-repository ppa:alessandro-strada/ppa
+sudo apt-get update
+sudo apt-get install google-drive-ocamlfuse
+sudo google-drive-ocamlfuse
 mkdir ~/google-drive
-google-drive-ocamlfuse ~/google-drive
+sudo google-drive-ocamlfuse ~/google-drive
 df -h
 
 ### lrz (Care4C)
 wget https://syncandshare.lrz.de/client_deployment/LRZ_Sync_Share_Latest_amd64.deb
-dpkg -i LRZ_Sync_Share_Latest_amd64.deb
+sudo dpkg -i LRZ_Sync_Share_Latest_amd64.deb
 
 ### nextcloud
 #sudo add-apt-repository 'deb http://ppa.launchpad.net/nextcloud-devs/client/ubuntu bionic main'
@@ -133,8 +133,9 @@ curl https://rclone.org/install.sh | sudo bash
 
 ###### pdf viwers and utilities
 # pdf studio viewer
-#wget https://download.qoppa.com/pdfstudioviewer/PDFStudioViewer_linux64.sh
-#sush ./PDFStudioViewer_linux64.sh
+wget https://download.qoppa.com/pdfstudioviewer/PDFStudioViewer_linux64.sh
+chmod 777 PDFStudioViewer_linux64.sh
+sudo ./PDFStudioViewer_linux64.sh
 
 
 ## signal
@@ -143,7 +144,7 @@ echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sud
 sudo apt update && sudo apt install signal-desktop
 
 ########### java
-aptitude install -y openjdk-8-jre
+sudo aptitude install -y openjdk-8-jre
 
 ########### imageJ
 #wget https://downloads.imagej.net/fiji/latest/fiji-linux64.zip
