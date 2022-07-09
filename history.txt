@@ -1,0 +1,1000 @@
+  794  sudo aptitude install python3-pip
+  795  pip3 --version
+  796  python -m pip3 install "dask[complete]"
+  797  sudo python -m pip3 install "dask[complete]"
+  798  pip3 --version
+  799  ll
+  800  pip -V
+  801  pip3 -V
+  802  pip3 --help
+  803  ll
+  804  cd ..
+  805  git clone https://github.com/dask/dak.git
+  806  git clone https://github.com/dask/dask.git
+  807  rm -r dask/
+  808  rm dask
+  809  rm 
+  810  rm --help
+  811  rm -f -r dask
+  812  ll
+  813  git clone https://github.com/dask/dask.git
+  814  cd dask/
+  815  ll
+  816  cat README.rst 
+  817  ll
+  818  pip
+  819  pip3
+  820  pip3 install .
+  821  sudo aptitude update
+  822  sudo aptitude upgrade
+  823  exit
+  824  sudo aptitude update
+  825  sudo aptitude upgrade
+  826  sudo aptitude install dia
+  827  sudo aptitude update
+  828  sudo aptitude upgrade
+  829  cd git
+  830  cd github/
+  831  ll
+  832  git clone https://github.com/Cross-Forest/Ontologies.git
+  833  ll
+  834  cd Ontologies/
+  835  ll
+  836  cd ifn/
+  837  ll
+  838  cd ..
+  839  ll
+  840  cd measures/
+  841  ll
+  842  cd ..
+  843  ll
+  844  cd SM4/
+  845  ll
+  846  ll -r
+  847  ll SM4Revisited/
+  848  ll SM4-dash
+  849  rm SM4-dash
+  850  rm -r SM4-dash
+  851  ll
+  852  ll SM4-dash-models/
+  853  git clone https://github.com/dendro-rings/sm4-dask-models.git
+  854  cd sm4-dask-models/
+  855  ll
+  856  mkdir help
+  857  mv Sima* help
+  858  ll
+  859  mv ManualModelizador.pdf help
+  860  ll help/
+  861  git add .
+  862  git push
+  863  ll
+  864  git status
+  865  git add .
+  866  git status
+  867  git push
+  868  ll
+  869  git status
+  870  git commit -m ""
+  871  git commit -m "help files"
+  872  cd ..
+  873  ll
+  874  cd sm4-dask-models/
+  875  ll
+  876  git status
+  877  git push
+  878  exit
+  879  sudo aptitude update
+  880  sudo aptitude upgrade
+  881  cd github/
+  882  ll
+  883  cd SM4/
+  884  ll
+  885  cd sm4-dask-models/
+  886  ll
+  887  git status 
+  888  uname
+  889  uname -a
+  890  R
+  891  git add .
+  892  git pull
+  893  cd ..
+  894  ll+
+  895  cd ..
+  896  ll
+  897  cd linux-apps-install/
+  898  ll
+  899  git status
+  900  history 
+  901  history > ~/Desktop/tmp/history.010.txt
+  902  R --ver
+  903  R --version
+  904  R 
+  905  git status
+  906  git add .
+  907  git status
+  908  git add .
+  909  git status
+  910  git commit -m "new history file"
+  911  git push
+  912  exit
+  913  cd ..
+  914  cd github/
+  915  git clone https://github.com/acristo/git_training
+  916  cd git_training/
+  917  ll
+  918  cat Bob.txt 
+  919  cat Alice.txt 
+  920  git branch change_alice
+  921  git checkout change_alice 
+  922  git checkout master 
+  923  git checkout change_alice 
+  924  git branch -a
+  925  cd ..
+  926  rm git_training/
+  927  rm -r git_training
+  928  ll
+  929  git clone https://github.com/dendro-rings/git_training
+  930  rm -r git_training
+  931  git clone https://github.com/acristo/git_training
+  932  ll
+  933  cd git_training/
+  934  ll
+  935  echo "just an empty file" >> ./Bob.txt
+  936  cat Bob.txt 
+  937  cat > Bob.2.txt
+  938  cat Bob.2.txt
+  939  cat Bob.txt 
+  940  touch Bob.3.txt
+  941  ll
+  942  touch Bob.4.txt Bob.5.txt Bob.6.txt Bob.7.txt
+  943  ll
+  944  > Bob.8.txt
+  945  ll
+  946  git status 
+  947  git add Bob*
+  948  git status 
+  949  git commit
+  950  git push
+  951  cat Alice.txt 
+  952  mousepad Bob.5.txt 
+  953  git status 
+  954  git diff
+  955  git add Bob.5.txt 
+  956  git diff
+  957  git diff --staged 
+  958  mousepad Bob.5.txt 
+  959  git status 
+  960  git diff 
+  961  git add Bob.5.txt 
+  962  git diff 
+  963  git diff --staged 
+  964  git commit -m "Add text to Bob.5"
+  965  git log
+  966  git push
+  967  git branch change_alice
+  968  git checkout change_alice 
+  969  mousepad Alice.txt 
+  970  git add Alice.txt 
+  971  git commit -m "Alice add line"
+  972  git push
+  973  git push --set-upstream origin change_alice 
+  974  git branch
+  975  git branch -a
+  976  git checkout master 
+  977  cat > Bob.txt 
+  978  cat Bob.txt 
+  979  cat >> Bob.txt 
+  980  cat Bob.txt 
+  981  git checkout change_alice 
+  982  cat Alice.txt 
+  983  cat >> Alice.txt 
+  984  cat Alice.txt 
+  985  git commit -m "some add to Alice in branch"
+  986  git add Alice.txt 
+  987  git commit -m "some add to Alice in branch"
+  988  git checkout master 
+  989  get add .
+  990  git add .
+  991  git commit -m "some add to Bob in master-branch"
+  992  git status 
+  993  git merge change_alice 
+  994  git checkout -b bobby_branch
+  995  cat >> Bob.7.txt 
+  996  git add Bob.7.txt 
+  997  git commit -m "commit to branch bobby"
+  998  git status
+  999  git diff
+ 1000  git diff --staged 
+ 1001  git checkout master 
+ 1002  cat Bob.7.txt 
+ 1003  cat >> Bob.7.txt 
+ 1004  git add .
+ 1005  git commit -m "commit into master branch"
+ 1006  git merge bobby_branch 
+ 1007  git status 
+ 1008  mousepad Bob.7.txt 
+ 1009  git add .
+ 1010  git commit -m "true commit on master"
+ 1011  git merge --abort 
+ 1012  git checkout -b add_patrick
+ 1013  > Patrick.txt
+ 1014  git add Patrick.txt 
+ 1015  git commit -m "adding Patrick file"
+ 1016  git checkout master 
+ 1017  cat >> Bob.3.txt 
+ 1018  git add Bob.3.txt 
+ 1019  git commit -m "add text to bob 3"
+ 1020  git checkout add_patrick 
+ 1021  git rebase master 
+ 1022  git log --graph
+ 1023  git status 
+ 1024  git checkout master 
+ 1025  git push
+ 1026  git fetch 
+ 1027  git status 
+ 1028  git pull
+ 1029  cd ..
+ 1030  sudo aptitude update
+ 1031  sudo aptitude upgrade
+ 1032  exit
+ 1033  sudo aptitude update
+ 1034  sudo aptitude upgrade
+ 1035  cd github/git_training/
+ 1036  ll
+ 1037  cat Alice.txt 
+ 1038  git status
+ 1039  git branch add_patrick 
+ 1040  git checkout add_patrick 
+ 1041  git checkout master 
+ 1042  git status
+ 1043  git checkout -b new_branch 
+ 1044  cat >> Alice.txt 
+ 1045  cat >> Bob.txt 
+ 1046  git add Alice.txt 
+ 1047  git commit -m "Add text to Alice"
+ 1048  git add Bob.txt 
+ 1049  git commit -m "Add text to Bob"
+ 1050  cat >> Alice.txt 
+ 1051  git add Alice.txt 
+ 1052  git commit -m "Add more text to Alice"
+ 1053  git log
+ 1054  git log --o
+ 1055  git log --oneline 
+ 1056  git rebase HEAD~3
+ 1057  git rebase -i HEAD~3
+ 1058  git log --oneline 
+ 1059  git reflog 
+ 1060  cd ..
+ 1061  ll
+ 1062  cd linux-apps-install/
+ 1063  git status
+ 1064  git fetch 
+ 1065  git pull
+ 1066  mousepad install.sh hist.txt history.010.txt 
+ 1067  git status
+ 1068  git add hist*
+ 1069  git commit -m "history changes"
+ 1070  git push
+ 1071  exit
+ 1072  cd github/git_training/
+ 1073  git status 
+ 1074  git fetch 
+ 1075  git checkout master 
+ 1076  git pull
+ 1077  git status
+ 1078  git log
+ 1079  git log --oneline 
+ 1080  clear
+ 1081  git log --oneline 
+ 1082  sudo aptitude update
+ 1083  sudo aptitude upgrade
+ 1084  exit
+ 1085  sudo aptitude update
+ 1086  cd github/
+ 1087  cd linux-apps-install/
+ 1088  ll
+ 1089  mousepad install.sh install01.sh hist.txt history.010.txt 
+ 1090  rename history.010.txt find.txt
+ 1091  mv history.010.txt find.txt
+ 1092  ll
+ 1093  git add .
+ 1094  git commit -m "filenames changes"
+ 1095  git push
+ 1096  mousepad find.txt &
+ 1097  mousepad find.txt &&
+ 1098  mousepad find.txt &
+ 1099  grep -iRl "ython" .
+ 1100  python -h
+ 1101  exit
+ 1102  cd github/
+ 1103  ll
+ 1104  cp /media/cristobal/FF8C-7BD8/sima_stable/ .
+ 1105  cp -r /media/cristobal/FF8C-7BD8/sima_stable/ .
+ 1106  cd sima_stable/
+ 1107  git 
+ 1108  git init
+ 1109  ll
+ 1110  chmod 777 install.sh requirements.txt 
+ 1111  git add .
+ 1112  git commit -m "initial commit. code from sngular. Moises"
+ 1113  git
+ 1114  git push https://github.com/simanfor-dask/SM4-stable.git
+ 1115  git push --set-upstream https://github.com/simanfor-dask/SM4-stable.git master
+ 1116  git push --set-upstream https://github.com/simanfor-dask/SM4stable.git master
+ 1117  cd ..
+ 1118  cd sima_stable/
+ 1119  ll
+ 1120  ./install.sh 
+ 1121  exit
+ 1122  sudo aptitude update
+ 1123  sudo aptitude upgrade
+ 1124  exit
+ 1125  cd github
+ 1126  ll
+ 1127  cd SM4stable/
+ 1128  ll
+ 1129  git status
+ 1130  git fecht
+ 1131  git fetch
+ 1132  git pull
+ 1133  dia
+ 1134  git add .
+ 1135  git status
+ 1136  cd ..
+ 1137  ll
+ 1138  cd SM4
+ 1139  ll
+ 1140  cd sm4-dask-models/
+ 1141  ll
+ 1142  git pull
+ 1143  git status
+ 1144  git add .
+ 1145  git commit -m "add help information / ec volumen"
+ 1146  git add
+ 1147  git add .
+ 1148  git status
+ 1149  git commit -m "add help information / ec volumen / del manual main folder"
+ 1150  git push
+ 1151  cd ../../SM4stable/simulator/src/
+ 1152  ll
+ 1153  python3 main.py -scenario_file ../scenario/scenario_test_1.json
+ 1154  python3 main.py -scenario_file ../../scenario/scenario_test_1.json
+ 1155  python3 main.py -scenario_file ../../scenario/scenario_test_1.json -v 5
+ 1156  python3 main.py -scenario_file ../../scenario/scenario_test_1.json -v 5 > errors.txt
+ 1157  mousepad errors.txt 
+ 1158  sudo aptitude update
+ 1159  sudo aptitude upgrade
+ 1160  exit
+ 1161  cd Downloads/
+ 1162  ll
+ 1163  ll oki*
+ 1164  sudo dpkg -i okimfpsdrv_1.7-0_amd64_231225.deb 
+ 1165  sudo aptitude update
+ 1166  sudo aptitude upgrade
+ 1167  sudo aptitude upgrade -y
+ 1168  AAexit
+ 1169  exit
+ 1170  cd github/SM4stable/
+ 1171  ll
+ 1172  git status
+ 1173  git pull
+ 1174  git add .
+ 1175  git status
+ 1176  git commit -m "test updates"
+ 1177  git push
+ 1178  exit
+ 1179  sudo aptitude update
+ 1180  sudo aptitude upgrade
+ 1181  exit
+ 1182  sudo aptitude update
+ 1183  sudo aptitude upgrade
+ 1184  exit
+ 1185  find -r . -name "*cubifor*"
+ 1186  find -R . -name "*cubifor*"
+ 1187  find --help
+ 1188  find ./Disk.IUGFS/bibliografia/ -name "*cubifor*"
+ 1189  find ./Disk.IUGFS/ -name "*cubifor*"
+ 1190  sudo aptitude update
+ 1191  sudo aptitude -y upgrade
+ 1192  exit
+ 1193  sudo aptitude update
+ 1194  sudo aptitude upgrade
+ 1195  sudo aptitude update
+ 1196  sudo aptitude -y upgrade
+ 1197  java -version 
+ 1198  whereis firefox
+ 1199  update-alternatives --config java
+ 1200  ll /usr/lib/firefox-addons/
+ 1201  cd /usr/lib/firefox-addons/plugins/
+ 1202  ll /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+ 1203  ll /usr/lib/jvm/java-11-openjdk-amd64/lib/
+ 1204  whereis icedtea*
+ 1205  whereis openjdk*
+ 1206  whereis openjdk
+ 1207  whereis openjdk-11
+ 1208  whereis openjdk-11-jre
+ 1209  whereis firefox
+ 1210  history
+ 1211  whereis java-11-openjdk
+ 1212  sudo aptitude install icedtea-plugin 
+ 1213  sudo aptitude update
+ 1214  sudo aptitude -y upgrade
+ 1215  sudo aptitude update
+ 1216  sudo aptitude -y upgrade
+ 1217  cd github
+ 1218  ll
+ 1219  git clone https://github.com/IUFOR-selvicultura/SiManFor-Models.git
+ 1220  cd SiManFor-Models/
+ 1221  ll
+ 1222  mousepad 2010_IBERO_Psylvestris_v11.cs 
+ 1223  cd Model.Others/
+ 1224  ll
+ 1225  cd ..
+ 1226  cd SM4stable/
+ 1227  ll
+ 1228  cd ..
+ 1229  ll
+ 1230  cd SM4stable/
+ 1231  git add .
+ 1232  git status
+ 1233  git commmit -m "update to ver 0.5.1"
+ 1234  git commit -m "update to ver 0.5.1"
+ 1235  git push
+ 1236  cd ..
+ 1237  ll
+ 1238  git clone https://github.com/simanfor-dask/simulator/
+ 1239  cd simulator/
+ 1240  ll
+ 1241  cat README.md 
+ 1242  sudo aptitude install KDiff3
+ 1243  sudo aptitude install kdiff3
+ 1244  exit
+ 1245  sudo aptitude update
+ 1246  cd simulator/
+ 1247  cd github
+ 1248  cd simulator/
+ 1249  ll
+ 1250  git pull
+ 1251  ll
+ 1252  cd ..
+ 1253  cp -r simulator/ sm4-dask-simulator/.
+ 1254  cp -r simulator/ ./sm4-dask-simulator/.
+ 1255  mkdir sm4-dask-simulator
+ 1256  cp -r simulator/ ./sm4-dask-simulator/.
+ 1257  cd sm4-dask-simulator/
+ 1258  ll
+ 1259  git init
+ 1260  git add .
+ 1261  git commit -m "simanfor simulator from singular"
+ 1262  git remote add origin https://github.com/dendro-rings/sm4-dask-simulator.git
+ 1263  git push -u origin master
+ 1264  ll
+ 1265  git add .
+ 1266  git status
+ 1267  git commit -m "adding simulator folder"
+ 1268  git push
+ 1269  cd simulator/
+ 1270  ll
+ 1271  cd src/
+ 1272  ll
+ 1273  cd ../../../
+ 1274  python3 main.py -scenario_file ../files/scenario_test_11.json -v 5 > errors.txt
+ 1275  cd ..
+ 1276  ll
+ 1277  sudo ./install.sh 
+ 1278  sudo ./install.sh -H
+ 1279  cd simulator/src/
+ 1280  python3 main.py -scenario_file  /home/shared/project/simanfor/scenario/scenario_test_11.json -v 5 > errors.txt
+ 1281  python3 main.py -scenario_file  /home/shared/project/simanfor/scenario/scenario_test_110.json -v 5 > errors.txt
+ 1282  ll e*
+ 1283  python3 main.py -scenario_file  /home/shared/project/simanfor/scenario/scenario_test_110.json -v 5
+ 1284  python3 main.py -scenario_file  /home/shared/project/simanfor/scenario/scenario_test_110.json -v 15
+ 1285  cd ..
+ 1286  cp -r ../shared/project/ ./project/
+ 1287  cp -r ../shared/project/ .
+ 1288  ll
+ 1289  cd project/
+ 1290  ll
+ 1291  cd simanfor/
+ 1292  ll
+ 1293  cd simulator/
+ 1294  ll
+ 1295  cd src/
+ 1296  ll
+ 1297  python3 main.py -scenario_file /home/cristobal/project/simanfor/scenario/scenario_test_110.json -v 15
+ 1298  python3 main.py -s /home/cristobal/project/simanfor/scenario/scenario_test_110.json -v 15
+ 1299  exit
+ 1300  cd ../shared/
+ 1301  ll
+ 1302  mkdir project
+ 1303  cd project/
+ 1304  mkdir simanfor
+ 1305  cd simanfor/
+ 1306  ll
+ 1307  ll ~/github/simulator/data/
+ 1308  cp ~/github/simulator/data/ .
+ 1309  ll
+ 1310  cd ..
+ 1311  ll
+ 1312  cd simanfor/
+ 1313  cp -r ~/github/simulator/data/ .
+ 1314  ll
+ 1315  ll ~/github/simulator/
+ 1316  mkdir output
+ 1317  ll
+ 1318  mkdir simulations
+ 1319  ll
+ 1320  ll ~/github/simulator/
+ 1321  ll ~/github/simulator/simulator/
+ 1322  ll ~/github/simulator/simulator/files/
+ 1323  ll
+ 1324  cd simulations/
+ 1325  ll ~/github/simulator/simulator/files/
+ 1326  cp ~/github/simulator/simulator/files/ .
+ 1327  cp- r ~/github/simulator/simulator/files/ .
+ 1328  cp -r ~/github/simulator/simulator/files/ .
+ 1329  ll
+ 1330  cp -r ./files/* .
+ 1331  ll
+ 1332  rm -r files/
+ 1333  ll
+ 1334  cd ..
+ 1335  ll ~/github/simulator/
+ 1336  ll ~/github/simulator/simulator/
+ 1337  ll
+ 1338  mkdir simulator
+ 1339  cd simulat
+ 1340  cd simulator/
+ 1341  ll
+ 1342  ll ~/github/simulator/simulator/
+ 1343  cp -r ~/github/simulator/simulator/src/*
+ 1344  ll
+ 1345  cp -r ~/github/simulator/simulator/src
+ 1346  cp -r ~/github/simulator/simulator/src .
+ 1347  ll
+ 1348  cp ~/github/simulator/simulator/* .
+ 1349  ll
+ 1350  ll ~/github/simulator/simulator/
+ 1351  ll ~/github/simulator/simulator/config_files/f
+ 1352  ll ~/github/simulator/simulator/files/
+ 1353  ll ~/github/simulator/simulator/tests/
+ 1354  cp -r ~/github/simulator/simulator/config_files/ .
+ 1355  cp -r ~/github/simulator/simulator/tests/ .
+ 1356  cd src/
+ 1357  python3 main.py -scenario_file ../scenario/scenario_test_1.json -v 5 > errors.txt
+ 1358  python3 main.py -scenario_file ../../scenario/scenario_test_1.json -v 5 > errors.txt
+ 1359  cd ~/github
+ 1360  cd simulator/
+ 1361  cd src/
+ 1362  ll
+ 1363  python3 main.py -scenario_file /home/shared/project/simanfor/scenario/scenario_test_1.json -v 5 > errors.txt
+ 1364  cd /home/shared/
+ 1365  cd project/simanfor/
+ 1366  ll
+ 1367  sudo ./install.sh 
+ 1368  cd simulator/
+ 1369  ll
+ 1370  cd src/
+ 1371  python3 main.py -scenario_file /home/shared/project/simanfor/scenario/scenario_test_1.json -v 5 > errors.txt
+ 1372  sudo aptitutde install gparted
+ 1373  sudo aptitude install gparted
+ 1374  sudo apt-get install gparted
+ 1375  sudo aptitude update
+ 1376  sudo aptitude upgrade -y
+ 1377  exit
+ 1378  lsusb
+ 1379  cd github
+ 1380  cd sm4-dask-simulator/
+ 1381  ll
+ 1382  cd simulator/src/
+ 1383  python3 main.py -s ../files/scenario_test_11.json -v 20 > errors.txt
+ 1384  cat errors.txt 
+ 1385  sudo aptitude update
+ 1386  sudo aptitude -y upgrade
+ 1387  sudo add-apt-repository universe
+ 1388  sudo aptitude install exfat-fuse exfat-utils 
+ 1389  parted --version
+ 1390  lsblk
+ 1391  dmesg
+ 1392  sudo aptitude install gpart
+ 1393  gpart
+ 1394  sudo aptitude install gparted
+ 1395  whereis fuse-exfat
+ 1396  which fuse-exfat
+ 1397  which fuse-exfat-utils
+ 1398  which exfat-utils
+ 1399  which nano
+ 1400  which emacs
+ 1401  which exfat-utils 
+ 1402  dpkg -s exfat-utils 
+ 1403  dpkg -s fuse-exfat
+ 1404  dpkg --info fuse-exfat
+ 1405  sudo aptitude install fuse-exfat-
+ 1406  dpkg -s exfat-fuse
+ 1407  cd git
+ 1408  cd github
+ 1409  ll
+ 1410  cd simulator/
+ 1411  git pull
+ 1412  dpkg -s exfat-fuse
+ 1413  dpkg -s skype*
+ 1414  dpkg -s skypeforlinux
+ 1415  cd simulator/src/
+ 1416  git pull
+ 1417  python3 main.py -s ../files/scenario_test_11.json -v 20 > errors.txt
+ 1418  mousepad errors.txt 
+ 1419  sudo aptitude update | sudo aptitude -y upgrade
+ 1420  cd github
+ 1421  cd simulator/simulator/
+ 1422  ll
+ 1423  cd src/
+ 1424  python3 main.py -s ../files/scenario_test_11.json -v 20 > errors.txt
+ 1425  mousepad errors.txt 
+ 1426  python3 main.py -s ../files/scenario_test_11.json -v 20 > errors.txt
+ 1427  cd ..
+ 1428  help rn
+ 1429  man rn
+ 1430  man mv
+ 1431  help mv
+ 1432  man -k mv
+ 1433  info mv
+ 1434  sudo mv simulator simulator.old
+ 1435  ll
+ 1436  git clone https://github.com/simanfor-dask/simulator.git
+ 1437  cd simulator
+ 1438  cd simulator/src/
+ 1439  python3 main.py -s ../files/scenario_test_12.json -v 20 > errors.txt
+ 1440  exit
+ 1441  sudo aptitude update && sudo aptitude -y upgrade
+ 1442  sudo aptitude install snap
+ 1443  sudo aptitude update && sudo aptitude -y upgrade
+ 1444  sudo snap install pycharm-community --classic
+ 1445  exit
+ 1446  cd github
+ 1447  cd simulator
+ 1448  cd simulator/src/
+ 1449  cd ../files/
+ 1450  sudo aptitude update && sudo aptitude -y upgrade
+ 1451  exit
+ 1452  cd github
+ 1453  cd simulator
+ 1454  ll
+ 1455  git pull
+ 1456  cd ..
+ 1457  ll sim*
+ 1458  sudo mv simulator simulator.old
+ 1459  sudo mv simulator simulator.old2
+ 1460  ll sim*
+ 1461  git clone https://github.com/simanfor-dask/simulator
+ 1462  cd simulator
+ 1463  ll
+ 1464  git branch pruebas
+ 1465  git status
+ 1466  git checkout pruebas 
+ 1467  git status
+ 1468  cd simulator/src/
+ 1469  ll
+ 1470  python3 main.py -s ../files/scenario_test_11.json
+ 1471  python3 ./main.py -s ../files/scenario_test_11.json
+ 1472  python3 ./main.py -s ../files/scenario_test_11.json -v 20
+ 1473  cd ..
+ 1474  ll 
+ 1475  sudo ./install.sh 
+ 1476  sudo aptitude install cristobal@cristobal-selvi:~/github/simulator$ sudo ./install.sh 
+ 1477  [sudo] password for cristobal: 
+ 1478  All packages are up to date.
+ 1479  Reading package lists... Done
+ 1480  Building dependency tree       
+ 1481  Reading state information... Done
+ 1482  Calculating upgrade... Done
+ 1483  0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+ 1484  Reading package lists... Done
+ 1485  Building dependency tree       
+ 1486  Reading state information... Done
+ 1487  python3-wheel is already the newest version (0.30.0-0.2).
+ 1488  python3 is already the newest version (3.6.7-1~18.04).
+ 1489  python3-dev is already the newest version (3.6.7-1~18.04).
+ 1490  python3-pip is already the newest version (9.0.1-2.3~ubuntu1.18.04.1).
+ 1491  0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+ 1492  WARNING: The directory '/home/cristobal/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+ 1493  Requirement already up-to-date: pip in /home/cristobal/.local/lib/python3.6/site-packages (20.0.2)
+ 1494  Collecting setuptools
+ 1495    Downloading setuptools-46.0.0-py3-none-any.whl (582 kB)
+ 1496       |████████████████████████████████| 582 kB 777 kB/s 
+ 1497  Requirement already up-to-date: wheel in /home/cristobal/.local/lib/python3.6/site-packages (0.34.2)
+ 1498  ERROR: onedrived 2.0.0 requires arrow, which is not installed.
+ 1499  ERROR: onedrived 2.0.0 requires bidict, which is not installed.
+ 1500  ERROR: onedrived 2.0.0 requires colorama>=0.3.7, which is not installed.
+ 1501  ERROR: onedrived 2.0.0 requires daemonocle>=1.0.1, which is not installed.
+ 1502  ERROR: onedrived 2.0.0 requires inotify_simple, which is not installed.
+ 1503  ERROR: onedrived 2.0.0 requires onedrivesdk, which is not installed.
+ 1504  ERROR: launchpadlib 1.10.6 requires testresources, which is not installed.
+ 1505  Installing collected packages: setuptools
+ 1506    Attempting uninstall: setuptools
+ 1507      Found existing installation: setuptools 45.2.0
+ 1508      Uninstalling setuptools-45.2.0:
+ 1509        Successfully uninstalled setuptools-45.2.0
+ 1510  Successfully installed setuptools-46.0.0
+ 1511  WARNING: The directory '/home/cristobal/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+ 1512  Requirement already satisfied: bokeh==1.4.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 1)) (1.4.0)
+ 1513  Requirement already satisfied: Click==7.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 2)) (7.0)
+ 1514  Requirement already satisfied: cloudpickle==1.3.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 3)) (1.3.0)
+ 1515  Requirement already satisfied: dask==2.10.1 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 4)) (2.10.1+6.g03aca07b)
+ 1516  Requirement already satisfied: distributed==2.10.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 5)) (2.10.0)
+ 1517  Requirement already satisfied: et-xmlfile==1.0.1 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 6)) (1.0.1)
+ 1518  Requirement already satisfied: fsspec==0.6.2 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 7)) (0.6.2)
+ 1519  Requirement already satisfied: HeapDict==1.0.1 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 8)) (1.0.1)
+ 1520  Requirement already satisfied: jdcal==1.4.1 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 9)) (1.4.1)
+ 1521  Requirement already satisfied: Jinja2==2.11.1 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 10)) (2.11.1)
+ 1522  Requirement already satisfied: locket==0.2.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 11)) (0.2.0)
+ 1523  Requirement already satisfied: MarkupSafe==1.1.1 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 12)) (1.1.1)
+ 1524  Requirement already satisfied: msgpack==0.6.2 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 13)) (0.6.2)
+ 1525  Requirement already satisfied: numpy==1.18.1 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 14)) (1.18.1)
+ 1526  Requirement already satisfied: openpyxl==3.0.3 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 15)) (3.0.3)
+ 1527  Requirement already satisfied: packaging==20.1 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 16)) (20.1)
+ 1528  Requirement already satisfied: pandas==1.0.1 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 17)) (1.0.1)
+ 1529  Requirement already satisfied: partd==1.1.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 18)) (1.1.0)
+ 1530  Requirement already satisfied: Pillow==7.0.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 19)) (7.0.0)
+ 1531  Requirement already satisfied: psutil==5.6.7 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 20)) (5.6.7)
+ 1532  Requirement already satisfied: pyparsing==2.4.6 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 21)) (2.4.6)
+ 1533  Requirement already satisfied: python-dateutil==2.8.1 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 22)) (2.8.1)
+ 1534  Requirement already satisfied: pytz==2019.3 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 23)) (2019.3)
+ 1535  Requirement already satisfied: PyYAML==5.3 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 24)) (5.3)
+ 1536  Requirement already satisfied: scipy==1.4.1 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 25)) (1.4.1)
+ 1537  Requirement already satisfied: six==1.14.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 26)) (1.14.0)
+ 1538  Requirement already satisfied: sortedcontainers==2.1.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 27)) (2.1.0)
+ 1539  Requirement already satisfied: tblib==1.6.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 28)) (1.6.0)
+ 1540  Requirement already satisfied: toolz==0.10.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 29)) (0.10.0)
+ 1541  Requirement already satisfied: tornado==6.0.3 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 30)) (6.0.3)
+ 1542  Requirement already satisfied: xlrd==1.2.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 31)) (1.2.0)
+ 1543  Requirement already satisfied: zict==1.0.0 in /home/cristobal/.local/lib/python3.6/site-packages (from -r requirements.txt (line 32)) (1.0.0)
+ 1544  Requirement already satisfied: setuptools in /usr/local/lib/python3.6/dist-packages (from distributed==2.10.0->-r requirements.txt (line 5)) (46.0.0)
+ 1545  Reading package lists... Done
+ 1546  Building dependency tree       
+ 1547  Reading state information... Done
+ 1548  0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+ 1549  Simanfor (Tree Simulator) was installed successfully
+ 1550  sudo aptitude install arrow
+ 1551  sudo aptitude install i18n
+ 1552  sudo aptitude install libkf5i18n-data 
+ 1553  pip install-i18n
+ 1554  pip install i18n
+ 1555  pip install python-i18n
+ 1556  cd simulator/src/
+ 1557  python3 main.py -s ../files/scenario_test_11.json
+ 1558  exit
+ 1559  sudo aptitude update && sudo aptitude -y upgrade
+ 1560  cd github
+ 1561  cd simulator
+ 1562  ll
+ 1563  cat simanfor.install.output 
+ 1564  sudo -H ./install.sh 
+ 1565  git status 
+ 1566  git checkout simulator/.idea/
+ 1567  ll
+ 1568  git checkout ./simulator/.idea/
+ 1569  git checkout ./.idea/
+ 1570  git checkout ./simulator/.idea
+ 1571  git checkout master 
+ 1572  git status 
+ 1573  cd ..
+ 1574  sudo mv ./simulator ./simulator.old3
+ 1575  ll
+ 1576  git clone https://github.com/simanfor-dask/simulator
+ 1577  python3 main.py -s ~/project/simanfor/scenario/scenario_test_11.json
+ 1578  ll ~/project/simanfor/scenario/
+ 1579  python3 main.py -s ~/project/simanfor/scenario/scenario_test_11.json
+ 1580  cd simulator
+ 1581  cd simulator/src/
+ 1582  python3 main.py -s ~/project/simanfor/scenario/scenario_test_11.json
+ 1583  cd ../..
+ 1584  cd github
+ 1585  sudo mv ./simulator ./simulator.old4
+ 1586  git clone https://github.com/simanfor-dask/simulator
+ 1587  cd simulator
+ 1588  cd src/
+ 1589  ll
+ 1590  cd util/
+ 1591  ll
+ 1592  cd ..
+ 1593  cd translations/
+ 1594  ll
+ 1595  cd ..
+ 1596  git push
+ 1597  cd ..
+ 1598  sudo mv ./simulator ./simulator.old5
+ 1599  git clone https://github.com/simanfor-dask/simulator
+ 1600  cd simulator
+ 1601  cd s
+ 1602  cd src/
+ 1603  python3 main.py -s ../files/scenario_test_11.json
+ 1604  python3 main.py -s ../files/scenario_test_12.json
+ 1605  python3 main.py -s ../files/scenario_test_13.json
+ 1606  python3 main.py -s ../files/scenario_test_14.json
+ 1607  python3 main.py -s ../files/scenario_test_15.json
+ 1608  python3 main.py -s ../files/scenario_test_16.json
+ 1609  python3 main.py -s ../files/scenario_test_11.json
+ 1610  python3 main.py -s ../files/scenario_test_12.json
+ 1611  python3 main.py -s ../files/scenario_test_13.json
+ 1612  python3 main.py -s ../files/scenario_test_14.json
+ 1613  python3 main.py -s ../files/scenario_test_15.json
+ 1614  python3 main.py -s ../files/scenario_test_16.json
+ 1615  python3 main.py -s ../files/scenario_test_16.json -l en
+ 1616  git pull
+ 1617  sudo aptitude update && sudo aptitude -y upgrade
+ 1618  cd github
+ 1619  cd simulator
+ 1620  git pull
+ 1621  exit
+ 1622  ls
+ 1623  lsusb
+ 1624  lsdev
+ 1625  sudo aptitude update && sudo aptitude -y upgrade
+ 1626  cd github
+ 1627  cd simulator/
+ 1628  ll
+ 1629  git status 
+ 1630  git add .
+ 1631  git pull
+ 1632  cd simulator/
+ 1633  cd src/
+ 1634  python3 main.py -s ../files/scenario_test_16.json -l en
+ 1635  python3 main.py -s ../files/scenario_test_16.json -l es
+ 1636  python3 main.py -s ../files/scenario_test_15.json -l es
+ 1637  python3 main.py -s ../files/scenario_test_14.json -l es
+ 1638  python3 main.py -s ../files/scenario_test_13.json -l es
+ 1639  python3 main.py -s ../files/scenario_test_12.json -l es
+ 1640  python3 main.py -s ../files/scenario_test_11.json -l es
+ 1641  python3 main.py -s ../files/scenario_test_12.json -l es
+ 1642  python3 main.py -s ../files/scenario_test_12.json -l en
+ 1643  python3 main.py -s ../files/scenario_test_13.json -l en
+ 1644  python3 main.py -s ../files/scenario_test_13.json -l es
+ 1645  python3 main.py -s ../files/scenario_test_14.json -l es
+ 1646  python3 main.py -s ../files/scenario_test_15.json -l es
+ 1647  python3 main.py -s ../files/scenario_test_13.json -l es
+ 1648  python3 main.py -s ../files/scenario_test_14.json -l es
+ 1649  exit
+ 1650  sudo aptitude update
+ 1651  sudo aptitude upgrade
+ 1652  sudo rm /var/lib/apt/lists/lock
+ 1653  sudo aptitude update
+ 1654  sudo aptitude upgrade
+ 1655  sudo aptitude update
+ 1656  sudo aptitude upgrade
+ 1657  sudo aptitude update
+ 1658  sudo aptitude upgrade
+ 1659  sudo aptitude update
+ 1660  sudo aptitude upgrade
+ 1661  sudo aptitude update
+ 1662  sudo aptitude upgrade
+ 1663  exit
+ 1664  time sudo aptitude upgrade
+ 1665  time sudo aptitude update
+ 1666  time sudo aptitude upgrade
+ 1667  exit
+ 1668  time sudo aptitude update
+ 1669  time sudo aptitude upgrade
+ 1670  sudo aptitude install ethtool
+ 1671  time sudo aptitude update
+ 1672  sudo aptitude install ethtool
+ 1673  time sudo aptitude upgrade
+ 1674  exit
+ 1675  time sudo aptitude update
+ 1676  time sudo aptitude upgrade
+ 1677  exit
+ 1678  time sudo aptitude update
+ 1679  time sudo aptitude upgrade
+ 1680  cd github.personal/
+ 1681  ll
+ 1682  cd linux-apps-install/
+ 1683  ll
+ 1684  git pull
+ 1685  ll
+ 1686  rm history.010.txt 
+ 1687  git pull
+ 1688  rclone lsd onecloud:
+ 1689  rclone
+ 1690  rclone ls onecloud:
+ 1691  rclone config
+ 1692  rclone ls onedrive:
+ 1693  rclone config
+ 1694  rclone ls onedrive:
+ 1695  mkdir ~/onedrive
+ 1696  rclone --vfs-cache-mode writes mount "onedrive":  ~/onedrive
+ 1697  cd linux-apps-install/
+ 1698  cd github.personal/
+ 1699  cd linux-apps-install/
+ 1700  git status
+ 1701  git add .
+ 1702  git commit -m "update 10 cloud"
+ 1703  git push
+ 1704  time sudo aptitude update
+ 1705  time sudo aptitude upgrade
+ 1706  time sudo aptitude update
+ 1707  sudo apt install -y xrdp
+ 1708  sudo aptitude install -y xrdp
+ 1709  sudo sed -e 's/^new_cursors=true/new_cursors=false/g' -i /etc/xrdp/xrdp.ini
+ 1710  sudo systemctl enable xrdp
+ 1711  sudo systemctl restart xrdp
+ 1712  echo "xfce4-session" > ~/.xsession
+ 1713  D=/usr/share/xfce4:/usr/share/xubuntu:/usr/local/share
+ 1714  D=${D}:/usr/share:/var/lib/snapd/desktop:/usr/share
+ 1715  cat <<EOF > ~/.xsessionrc
+ 1716  export XDG_SESSION_DESKTOP=xubuntu
+ 1717  export XDG_DATA_DIRS=${D}
+ 1718  export XDG_CONFIG_DIRS=/etc/xdg/xdg-xubuntu:/etc/xdg:/etc/xdg
+ 1719  EOF
+ 1720  sudo cp /usr/bin/light-locker /usr/bin/light-locker.orig
+ 1721  cat <<EOF | sudo tee /usr/bin/light-locker
+ 1722  #!/bin/sh
+ 1723  # The light-locker uses XDG_SESSION_PATH provided by lightdm.
+ 1724  if [ ! -z "\${XDG_SESSION_PATH}" ]; then
+ 1725    /usr/bin/light-locker.orig
+ 1726  else
+ 1727    # Disable light-locker in XRDP.
+ 1728    true
+ 1729  fi
+ 1730  EOF
+ 1731  sudo chmod a+x /usr/bin/light-locker
+ 1732  git add .
+ 1733  git commit -m "remote"
+ 1734  git push
+ 1735  exit
+ 1736  sudo R
+ 1737  exit
+ 1738  sudo aptitude update
+ 1739  sudo aptitude upgrade
+ 1740  exit
+ 1741  sudo R
+ 1742  exit
+ 1743  sudo aptitude update
+ 1744  sudo aptitude upgrade
+ 1745  ll
+ 1746  ll s*
+ 1747  mkdir simanfor
+ 1748  cd simanfor/
+ 1749  ll
+ 1750  git clone https://github.com/simanfor-dask/simulator.git
+ 1751  sudo aptitude update
+ 1752  sudo aptitude upgrade
+ 1753  sudo aptitude update
+ 1754  sudo aptitude upgrade
+ 1755  exit
+ 1756  sudo apt update
+ 1757  sudo apt upgraçde
+ 1758  sudo apt upgrade
+ 1759  sudo apt upgraçde
+ 1760  sudo apt update
+ 1761  sudo aptitude update
+ 1762  sudo aptitude upgrade
+ 1763  cd github.personal/
+ 1764  cd linux-apps-install/
+ 1765  git status
+ 1766  git pull
+ 1767  sudo apt install apt-transport-https software-properties-common
+ 1768  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+ 1769  sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/'
+ 1770  sudo aptitude update 
+ 1771  sudo aptitude install -y r-base
+ 1772  R
+ 1773  sudo mousepad /etc/apt/sources.list
+ 1774  sudo aptitude update 
+ 1775  sudo apt install gnupg software-properties-common
+ 1776  wget -qO - https://qgis.org/downloads/qgis-2020.gpg.key | sudo gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/qgis-archive.gpg --import
+ 1777  sudo chmod a+r /etc/apt/trusted.gpg.d/qgis-archive.gpg
+ 1778  sudo add-apt-repository "deb https://qgis.org/debian `lsb_release -c -s` main"
+ 1779  sudo aptitude update 
+ 1780  sudo apt install qgis qgis-plugin-grass
+ 1781  sudo aptitude update 
+ 1782  sudo aptitude upgrade 
+ 1783  sudo R
+ 1784  sudo aptitude update 
+ 1785  sudo aptitude upgrade 
+ 1786  exit
+ 1787  cd ~/github.personal/
+ 1788  ll
+ 1789  cd linux-apps-install/
+ 1790  ll
+ 1791  git status
+ 1792  git pull
+ 1793  history > history.txt

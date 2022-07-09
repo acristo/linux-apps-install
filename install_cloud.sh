@@ -84,7 +84,13 @@ mkdir ~/OneDrive
 # Now you have to use the following command:
 
 rclone --vfs-cache-mode writes mount "onedrive":  ~/onedrive.Disk.IUGFS
+<<<<<<< HEAD
 rclone --vfs-cache-mode writes mount "pvsonedrive":  ~/onedrive.a_cristo_pvs_uva_es
+=======
+rclone --vfs-cache-mode writes mount "onedrive-pvs":  ~/onedrive.pvs
+rclone --vfs-cache-mode writes mount "catedra":  ~/onedrive.catedra
+
+>>>>>>> da98865f9d190940f1f75b627b53f7f4fea36780
 
 # In above command “one drive” is the name of the “remote”, so you should use the correct name there if yours is different. You can check the name of the “remote” in step 2 of this tutorial.
 # This command will mount one drive in given location and will continue to run in terminal. When you stop the process with,ctrl + c the one drive will be unmounted.
@@ -95,7 +101,13 @@ rclone --vfs-cache-mode writes mount "pvsonedrive":  ~/onedrive.a_cristo_pvs_uva
 # Open “Startup Applications“. And click on “Add“. Now, in the command field, enter the following:
 
 sh -c "rclone --vfs-cache-mode writes mount \"onedrive\": ~/onedrive.Disk.IUGFS"
+<<<<<<< HEAD
 sh -c "rclone --vfs-cache-mode writes mount \"pvsonedrive\":  ~/onedrive.a_cristo_pvs_uva_es/"
+=======
+sh -c "rclone --vfs-cache-mode writes mount \"onedrive-pvs\": ~/onedrive.pvs"
+sh -c "rclone --vfs-cache-mode writes mount \"catedra\":  ~/onedrive.catedra"
+
+>>>>>>> da98865f9d190940f1f75b627b53f7f4fea36780
 
 ##############################################################################################################
 ##############################################################################################################
