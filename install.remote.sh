@@ -1,13 +1,13 @@
 ##!/bin/bash
 
 # sudo apt-get install aptitude -y
-sudo aptitude update
+sudo apt update
 
 # https://www.hiroom2.com/2018/05/07/ubuntu-1804-xrdp-xfce-en/
 
 # 2 Install XRDP
 
-sudo aptitude install -y xrdp
+sudo apt install -y xrdp
 sudo sed -e 's/^new_cursors=true/new_cursors=false/g' -i /etc/xrdp/xrdp.ini
 sudo systemctl enable xrdp
 sudo systemctl restart xrdp

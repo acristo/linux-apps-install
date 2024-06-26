@@ -83,7 +83,7 @@ mkdir ~/OneDrive
 
 # Now you have to use the following command:
 
-rclone --vfs-cache-mode writes mount "onedrive":  ~/onedrive.Disk.IUGFS
+rclone --vfs-cache-mode writes mount "onedrive":  ~/OneDrive
 <<<<<<< HEAD
 rclone --vfs-cache-mode writes mount "pvsonedrive":  ~/onedrive.a_cristo_pvs_uva_es
 =======
