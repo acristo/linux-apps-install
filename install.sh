@@ -1,4 +1,4 @@
-#!/bin/bash
+##!/bin/bash
 
 sudo apt-get install aptitude -y
 sudo aptitude update
@@ -9,8 +9,9 @@ sudo aptitude install dkms
 sudo aptitude update && sudo aptitude upgrade -y
 sudo aptitude install -y mc
 sudo aptitude install -y synaptic
-sudo aptitude install -y krusader
-sudo aptitude install -y filezilla
+#sudo aptitude install -y krusader
+sudo apt install doublecmd-gtk
+#sudo aptitude install -y filezilla
 sudo aptitude install -y rar
 sudo aptitude install -y p7zip
 sudo aptitude install -y unace
@@ -29,12 +30,22 @@ sudo aptitude install -y gimp
 sudo aptitude install -y wine-stable
 sudo aptitude install -y vlc
 
+
+
 sudo aptitude install -y okular
 sudo aptitude install -y curl
 
+#Install Brave Browser on Ubuntu
+curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+#echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+apt update
+apt install brave-browser
+
 #https://launchpad.net/~phoerious/+archive/ubuntu/keepassxc
-sudo add-apt-repository ppa:phoerious/keepassxc
-sudo aptitude install keepassxc -y
+#sudo add-apt-repository ppa:phoerious/keepassxc
+add-apt-repository ppa:phoerious/keepassxc
+aptitude install keepassxc -y
 
 sudo add-apt-repository ppa:kelleyk/emacs | sudo aptitude install -y emacs
 sudo apt install apt-transport-https software-properties-common

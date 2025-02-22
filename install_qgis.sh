@@ -1,6 +1,9 @@
-#!/bin/bash
-sudo add-apt-repository 'deb https://qgis.org/ubuntu-ltr bionic main'
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
+##!/bin/bash
+#sudo add-apt-repository 'deb https://qgis.org/ubuntu-ltr bionic main'
+sudo add-apt-repository "deb https://qgis.org/ubuntu $(lsb_release -c -s) main"
+gpg --keyserver keyserver.ubuntu.com --recv DD45F6C3
+gpg --export --armor DD45F6C3 | sudo apt-key add -
+#sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key 51F523511C7028C3
 sudo aptitude update
 sudo aptitude install -y qgis qgis-plugin-grass
 
